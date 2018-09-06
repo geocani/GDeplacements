@@ -21,12 +21,11 @@
             <h1 class="text-center">Indemnités kilométriques.</h1>
         </div>
         <div class="row">
-
             <!-- connexion -->
             <div class="col-md-6 sep">
                 <h2>Connexion:</h2>
                 <div class="test">
-               
+               <!-- ??? -->
                 </div>
                 <div class="formulaire_connexion">
                     <form>
@@ -45,7 +44,6 @@
                     </form>
                 </div>
             </div>
-
             <!-- inscription -->
             <div class="col-md-6">
                 <h2>Inscription:</h2>
@@ -99,8 +97,56 @@
                 </div>
             </div>
         </div>
+        <div class="titre">
+            <h1 class="text-center">Formulaire.</h1>
+        </div>
         <!-- Formulaire -->
-                                   
+        <!-- Gauche --> 
+        <div class="row"> 
+            <div class="col-md-6">
+                <legend>Horaire</legend>
+                    <label for="date">Date:</label>
+                    <input type="date" class="form-control input-sm" id="date" placeholder="">
+                    <label for="heureRes">Heure au départ de la résidance administrative:</label>
+                    <input type="text" class="form-control input-sm" id="heureRes" placeholder="">
+                    <label for="heureDom">Heure au départ du domicile:</label>
+                    <input type="text" class="form-control input-sm" id="heureDom" placeholder="">
+                    <label for="commune">Commune visitées:</label>
+                    <input type="text" class="form-control input-sm" id="commune" placeholder="">
+                    <label for="heureCom">Heure d arrivée dans les communes:</label>
+                    <input type="text" class="form-control input-sm" id="heureCom" placeholder="">
+                    <label for="hDepCom">Heure départ de ces communes:</label>
+                    <input type="text" class="form-control input-sm" id="hDepCom" placeholder="">
+                    <label for="miTerm">Heure de rentrée mission terminée:</label>
+                    <input type="text" class="form-control input-sm" id="miTerm" placeholder="">
+            </div>
+            <!-- Doite -->
+            <div class="col-md-6">
+                <legend>Km parcourus</legend>
+                    <label for="km1">Km parcouru dans l'aglomeration de la résidance administrative:</label>
+                    <input type="text" class="form-control input-sm" id="km1" placeholder="">
+                    <label for="km2">Km parcouru en dehors:</label>
+                    <input type="text" class="form-control input-sm" id="km2" placeholder="">
+                    <label for="transcom">Transport en commun:</label>
+                    <input type="text" class="form-control input-sm" id="transcom" placeholder="">
+                    <legend>Temps de séjours:</legend>
+                    <input type="checkbox" id="sejour1" name="feature" value="scales"/>
+                    <label for="sejour1">+ 5h à - 8h</label><br>
+                    <input type="checkbox" id="sejour2" name="feature" value="scales"/>
+                    <label for="sejour2">8h et + et assimilés</label><br>
+                    <input type="checkbox" id="sejour3" name="feature" value="scales"/>
+                    <label for="sejour3">Nuitées</label><br>
+                    <legend>Montant frais réels limités au plafond:</legend>
+                    <input type="text" class="form-control input-sm" id="commune" placeholder="">
+                    <legend>Motifs des déplacements:</legend>
+                    <textarea class="form-control input-sm" id="address" rows="3"></textarea>
+                    <br>
+            </div>
+        </div> 
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg but">S'inscrire</button>
+        </div>
+        <br><br><br>
     </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

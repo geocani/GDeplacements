@@ -23,11 +23,12 @@
     margin-left: 15px;
 }
 .navbar{
-
     justify-content: flex-end;
 }
 .sep{
     border-right: 1px solid rgb(226, 226, 226);
-    
 }
+.formulaire_indem{
 
+    margin-top: 30px;
+}
