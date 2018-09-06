@@ -24,8 +24,8 @@
             <!-- connexion -->
             <div class="col-md-6 sep">
                 <h2>Connexion:</h2>
-                <div class="test">
-               <!-- ??? -->
+                <div class="IMG">
+               <!-- IMG -->
                 </div>
                 <div class="formulaire_connexion">
                     <form>
@@ -49,6 +49,11 @@
                 <h2>Inscription:</h2>
                 <div class="formulaire">
                     <form>
+
+                        
+
+
+
                         <div class="row">
                             <div class="col">
                                 <input type="text" class="form-control padinput" placeholder="Nom">
@@ -57,6 +62,26 @@
                                 <input type="text" class="form-control padinput" placeholder="Prénom">
                             </div>
                         </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control padinput" placeholder="Login">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control padinput" placeholder="Mot de passe">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control padinput" placeholder="Confirmer le mot de passe">
+                            </div>
+                        </div>
+
+
+
+
                         <div class="row">
                             <div class="col">
                                 <input type="text" class="form-control padinput" placeholder="Adresse">
