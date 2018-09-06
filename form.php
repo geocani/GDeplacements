@@ -133,25 +133,25 @@
                     <label for="date">Date:</label>
                     <input type="date" class="form-control input-sm" id="date" placeholder="">
                     <label for="heureRes">Heure au départ de la résidance administrative:</label>
-                    <input type="text" class="form-control input-sm" id="heureRes" placeholder="">
+                    <input type="time" class="form-control input-sm" id="heureRes" placeholder="">
                     <label for="heureDom">Heure au départ du domicile:</label>
-                    <input type="text" class="form-control input-sm" id="heureDom" placeholder="">
+                    <input type="time" class="form-control input-sm" id="heureDom" placeholder="">
                     <label for="commune">Commune visitées:</label>
-                    <input type="text" class="form-control input-sm" id="commune" placeholder="">
+                    <input type="text" class="form-control input-sm" id="commune" placeholder="Ex: Namur">
                     <label for="heureCom">Heure d arrivée dans les communes:</label>
-                    <input type="text" class="form-control input-sm" id="heureCom" placeholder="">
+                    <input type="time" class="form-control input-sm" id="heureCom" placeholder="">
                     <label for="hDepCom">Heure départ de ces communes:</label>
-                    <input type="text" class="form-control input-sm" id="hDepCom" placeholder="">
+                    <input type="time" class="form-control input-sm" id="hDepCom" placeholder="">
                     <label for="miTerm">Heure de rentrée mission terminée:</label>
-                    <input type="text" class="form-control input-sm" id="miTerm" placeholder="">
+                    <input type="time" class="form-control input-sm" id="miTerm" placeholder="">
             </div>
             <!-- Doite -->
             <div class="col-md-6">
                 <legend>Km parcourus</legend>
                     <label for="km1">Km parcouru dans l'aglomeration de la résidance administrative:</label>
-                    <input type="text" class="form-control input-sm" id="km1" placeholder="">
+                    <input type="number" class="form-control input-sm" id="km1" placeholder="100">
                     <label for="km2">Km parcouru en dehors:</label>
-                    <input type="text" class="form-control input-sm" id="km2" placeholder="">
+                    <input type="number" class="form-control input-sm" id="km2" placeholder="100">
                     <label for="transcom">Transport en commun:</label>
                     <input type="text" class="form-control input-sm" id="transcom" placeholder="">
                     <legend>Temps de séjours:</legend>
