@@ -1,0 +1,33 @@
+.padinput{
+
+    margin-bottom: 10px;
+}
+.but{
+    margin: 0 15px 0 15px;
+    width: 100%;
+
+}
+.titre{
+    margin: 30px 0 50px 0;
+}
+.test{
+    background-image: url("log.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 0.6;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.login_rec{
+    width: 100px;
+    margin-left: 15px;
+}
+.navbar{
+
+    justify-content: flex-end;
+}
+.sep{
+    border-right: 1px solid rgb(226, 226, 226);
+    
+}
+
