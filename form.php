@@ -136,14 +136,51 @@
                     <input type="time" class="form-control input-sm" id="heureRes" placeholder="">
                     <label for="heureDom">Heure au départ du domicile:</label>
                     <input type="time" class="form-control input-sm" id="heureDom" placeholder="">
-                    <label for="commune">Commune visitées:</label>
-                    <input type="text" class="form-control input-sm" id="commune" placeholder="Ex: Namur">
-                    <label for="heureCom">Heure d arrivée dans les communes:</label>
-                    <input type="time" class="form-control input-sm" id="heureCom" placeholder="">
-                    <label for="hDepCom">Heure départ de ces communes:</label>
-                    <input type="time" class="form-control input-sm" id="hDepCom" placeholder="">
-                    <label for="miTerm">Heure de rentrée mission terminée:</label>
-                    <input type="time" class="form-control input-sm" id="miTerm" placeholder="">
+                <legend>Communes visitées:</legend>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Commune:</label>
+                        <input type="text" class="form-control padinput" placeholder="Ex: Namur">
+                    </div>
+                    <div class="col">
+                        <label for="">Heure d'arrivée:</label>
+                        <input type="time" class="form-control padinput">
+                    </div>
+                    <div class="col">
+                        <label for="">Heure de départ:</label>
+                        <input type="time" class="form-control padinput">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Commune:</label>
+                        <input type="text" class="form-control padinput" placeholder="Ex: Namur">
+                    </div>
+                    <div class="col">
+                        <label for="">Heure d'arrivée:</label>
+                        <input type="time" class="form-control padinput">
+                    </div>
+                    <div class="col">
+                        <label for="">Heure de départ:</label>
+                        <input type="time" class="form-control padinput">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Commune:</label>
+                        <input type="text" class="form-control padinput" placeholder="Ex: Namur">
+                    </div>
+                    <div class="col">
+                        <label for="">Heure d'arrivée:</label>
+                        <input type="time" class="form-control padinput">
+                    </div>
+                    <div class="col">
+                        <label for="">Heure de départ:</label>
+                        <input type="time" class="form-control padinput">
+                    </div>
+                </div>
+                <label for="miTerm">Heure de rentrée mission terminée:</label>
+                <input type="time" class="form-control input-sm" id="miTerm" placeholder="">
             </div>
             <!-- Doite -->
             <div class="col-md-6">
@@ -154,14 +191,14 @@
                     <input type="number" class="form-control input-sm" id="km2" placeholder="100">
                     <label for="transcom">Transport en commun:</label>
                     <input type="text" class="form-control input-sm" id="transcom" placeholder="">
-                    <legend>Temps de séjours:</legend>
+                <legend>Temps de séjours:</legend>
                     <input type="checkbox" id="sejour1" name="feature" value="scales"/>
                     <label for="sejour1">+ 5h à - 8h</label><br>
                     <input type="checkbox" id="sejour2" name="feature" value="scales"/>
                     <label for="sejour2">8h et + et assimilés</label><br>
                     <input type="checkbox" id="sejour3" name="feature" value="scales"/>
                     <label for="sejour3">Nuitées</label><br>
-                    <legend>Montant frais réels limités au plafond:</legend>
+                <legend>Montant frais réels limités au plafond:</legend>
                     <input type="text" class="form-control input-sm" id="commune" placeholder="">
                     <legend>Motifs des déplacements:</legend>
                     <textarea class="form-control input-sm" id="address" rows="3"></textarea>
@@ -169,7 +206,7 @@
             </div>
         </div> 
         <div class="row">
-            <button type="button" class="btn btn-primary btn-lg but">S'inscrire</button>
+            <button type="button" class="btn btn-primary btn-lg but">Envoyer</button>
         </div>
         <br><br><br>
     </div>

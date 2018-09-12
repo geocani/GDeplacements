@@ -17,6 +17,8 @@
     opacity: 0.6;
     height: 178px;
     margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 2px;
 }
 .login_rec{
     width: 100px;
