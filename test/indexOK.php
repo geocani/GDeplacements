@@ -13,7 +13,6 @@
   <!-- Custom Bootstrap -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet">
-  <link href="css/style-all.css" rel="stylesheet">
   <title>frais kilometrique</title>
 </head>
 
@@ -25,12 +24,10 @@
     <!--HEADER MENU TOP FIX-->
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
-        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div> <!--Ico burger-->
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
       </div>
       <!--LOGO-->
-        <div class="logo_povince">
-            
-        </div>
+      <a href="index.html" class="logo"><b>DASH<span>IO</span></b></a>
       <!--MENU TOP-->
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
