@@ -88,6 +88,7 @@
     /*sidebar*/
 
     #sidebar {
+        display: none;
         height: auto;
         overflow: hidden;
         position: absolute;

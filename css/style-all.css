@@ -1,4 +1,48 @@
-.logo_province{
-    padding-top: 20px;
+.color233C4F{
+    background-color: #233C4F;
     
 }
+#sidebar{
+    background-color: #233C4F;
+}
+.sub-menu{
+    background-color: #233C4F;
+}
+.sub-menu:hover{
+    background-color: #2f323a;
+}
+a:hover{
+    
+}
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus{
+    background-color: #2f323a;
+    /* background-color: #2f323a; */
+}
+.pad-ico-profil{
+    padding: 0px 10px 0px 10px;
+}
+.pad-ico-sub{
+    padding: 0px 0px 0px 0px;
+}
+#sidebar .sub-menu > .sub li{
+    padding: 0px 0px 0px 10px;
+}
+.text-color{
+    color: #aeb2b7;
+}
+.ico-size{
+    font-size:15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #aeb2b7;
+}
+h5{
+    color: #aeb2b7;
+}
+.header, .footer{
+    padding: 0;
+}
+ul.sidebar-menu{
+    padding-top: 40px;
+}
+
