@@ -12,7 +12,7 @@
     background-color: #2f323a;
 }
 a:hover{
-    
+    color: white;
 }
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus{
     background-color: #2f323a;
@@ -55,6 +55,27 @@ ul.sidebar-menu{
     margin: auto;
     text-align: center;
 
+}
+.center{
+    margin-top: 100px;
+    text-align: center;
+
+}
+.active{
+    color: white;
+}
+.disabled{
+  pointer-events: none;
+  opacity: 0.3;
+}
+.card-body{
+    height: 50px;
+}
+.wrapper{
+    margin-top: 0;
+}
+.wrapper-login{
+    margin-top: 100px;
 }
 
 

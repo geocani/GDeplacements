@@ -5,111 +5,130 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+  <link href="" rel="icon">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!--external css-->
   <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
   <!-- Custom Bootstrap -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="css/style-responsive-test.css" rel="stylesheet">
   <link href="css/style-all.css" rel="stylesheet">
   <title>frais kilometrique</title>
 </head>
 
 <body>
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        HEADER MENU TOP
-        *********************************************************************************************************************************************************** -->
-    <!--HEADER MENU TOP FIX-->
-    <header class="header black-bg">
-      <div class="sidebar-toggle-box">
-        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div> <!--Ico burger-->
-      </div>
-      <!--LOGO-->
-        <div class="logo_povince">
-            
+    <!--HEADER MENU FIX-->
+    <header class="header color233C4F">
+        <div class="top-menu">
+            <ul class="nav pull-left top-menu">
+                <li>
+                    <img src="img/logo.png" alt="Logo" width="150px">
+                </li>
+            </ul>
+            <ul class="nav pull-right top-menu">
+                <li>
+                    <div class="sidebar-toggle-box">
+                        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation">
+                            <!--Ico burger-->
+                        </div> 
+                    </div>  
+                </li>
+            </ul>
         </div>
-      <!--MENU TOP-->
-      <div class="top-menu">
-        <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="#">LOGO</a></li>
-        </ul>
-        <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="#">Logout</a></li>
-        </ul>
-      </div>
     </header>
-    <!-- **********************************************************************************************************************************************************
-        SIDEBAR MENU LEFT
-        *********************************************************************************************************************************************************** -->
+    <!--SIDEBAR MENU LEFT-->
     <aside>
-      <div id="sidebar" class="nav-collapse ">
-        <!-- sidebar menu start-->
+      <div id="sidebar" class="nav-collapse">
         <ul class="sidebar-menu" id="nav-accordion">
-          <h5 class="centered">MENU LEFT</h5> <!-- TITRE-->
-          <!-- LIEN SIMPLE-->
+            <li ><h5 class="">PROFIL</h5></li> <!-- TITRE-->
+            <li><p class="text-color"><i class="fa fa-user ico-size"></i>-- --</p></li>
+            <li><p class="text-color"><i class="fa fa-briefcase ico-size"></i>--</p></li>
+            <li><p class="text-color"><i class="fa fa-drivers-license ico-size"></i>--</p></li>
+          
+          <!-- OUTILS-->
+          <li ><h5 class="">OUTILS</h5></li>
+          <li class="sub-menu">
+            <a class="disabled" href="javascript:;">
+              <i class="fa fa-plus"></i>
+              <span>Formulaire</span>
+              </a>
+            <ul class="sub">
+                <li><a href="#"><i class="fa fa-clock-o pad-ico-profil"></i>Historique</a></li>
+                <li><a href="#"><i class="fa fa fa-car pad-ico-profil"></i>Voiture</a></li>
+                <li><a href="#"><i class="fa fa-bus pad-ico-profil"></i>Transport en commun</a></li>
+            </ul>
+          </li>
+          <!-- VALIDATION-->
+          <li class="sub-menu">
+            <a class="disabled" href="javascript:;">
+              <i class="fa fa-check"></i>
+              <span>Validation</span>
+              </a>
+            <ul class="sub">
+              <li><a href="#">Lien</a></li>
+              <li><a href="#">Lien</a></li>
+            </ul>
+          </li>
+
+          <!-- DECONNEXION -->
           <li class="mt"> 
-            <a href="index.html">
-              <i class="fa fa-dashboard"></i>
-              <span>LIEN SIMPLE</span>
+            <a class="disabled" href="#">
+              <i class="fa fa-power-off"></i>
+              <span>DECONNEXION</span>
               </a>
-          </li>
-          <!-- LIEN ACCORDEON-->
-          <li class="sub-menu">
-            <a class="active" href="javascript:;">
-              <i class="fa fa-desktop"></i>
-              <span>UI Elements</span>
-              </a>
-            <ul class="sub">
-              <li><a href="#">General</a></li>
-            </ul>
-          </li>
-          <!-- LIEN ACCORDEON-->
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-cogs"></i>
-              <span>Components</span>
-              </a>
-            <ul class="sub">
-              <li><a href="#">Grids</a></li>
-              <li><a href="#">Calendar</a></li>
-            </ul>
-          </li>
-          <!-- LIEN ACCORDEON-->
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-book"></i>
-              <span>Extra Pages</span>
-              </a>
-            <ul class="sub">
-              <li><a href="#">Blank Page</a></li>
-              <li><a href="#">Login</a></li>
-            </ul>
           </li>
         </ul>
       </div>
     </aside>
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
+    <!--MAIN-->
     <section id="main-content">
-      <section class="wrapper">
-        <div class="row mt">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusamus nihil aliquam debitis ut eveniet optio, 
-            deserunt dolore deleniti perferendis non ratione error laudantium quaerat. Nulla inventore fuga a eos!</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui, nulla velit illo harum veritatis, quidem incidunt eligendi tempore atque 
-            aliquam accusantium quibusdam rem aut vitae consequatur provident? Nobis, numquam.</p>
+      <section class="wrapper wrapper-login">
+        <div class="rouge">
+          <div class="row">
+            <div class="col-sm-4">
+              <!-- .col-sm-3 -->
+            </div>
+            <!-- FORM -->
+            <div class="col-sm-4"> 
+              <div class="form-group">
+                <div class="ico-login">
+                  <img class="" src="img/sports-car.svg" width="200px" alt="">
+                </div>
+              </div>
+                <form class="form-horizontal" action="historique.php">
+                  <div class="form-group">
+                    <label class="control-label" for="login">Login:</label>
+                      <input type="text" class="form-control" id="login" placeholder="Enter login">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="pwd">Password:</label>
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                  </div>
+                  <div class="form-group"> 
+                    <div class="col-sm-offset-2">
+                      <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                    <div class="col-sm-offset-2">
+                      <button type="submit" class="btn btn-default">Envoyer</button>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <div class="col-sm-4">
+              <!-- .col-sm-3 -->
+            </div>
+          </div>
         </div>
       </section>
     </section>
-    <!-- **********************************************************************************************************************************************************
-        FOOTER
-        *********************************************************************************************************************************************************** -->
+    
+    <!--FOOTER-->
   </section>
   <!-- SCRIPT -->
   <script src="lib/jquery/jquery.min.js"></script>
