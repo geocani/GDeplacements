@@ -50,7 +50,7 @@
           <!-- OUTILS-->
           <li ><h5 class="">OUTILS</h5></li>
           <li class="sub-menu">
-            <a class="disabled" href="javascript:;">
+            <a class="disabled" href="javascript:;" >
               <i class="fa fa-plus"></i>
               <span>Formulaire</span>
               </a>
@@ -115,7 +115,7 @@
                   </div>
                   <div class="form-group"> 
                     <div class="col-sm-offset-2">
-                      <button type="submit" class="btn btn-default">Envoyer</button>
+                      <button type="submit" class="btn btn-default" >Envoyer</button>
                     </div>
                   </div>
                 </form>
@@ -129,6 +129,7 @@
     </section>
     
     <!--FOOTER-->
+    
   </section>
   <!-- SCRIPT -->
   <script src="lib/jquery/jquery.min.js"></script>

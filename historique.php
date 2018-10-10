@@ -27,6 +27,11 @@
                     <img src="img/logo.png" alt="Logo" width="150px">
                 </li>
             </ul>
+            <!-- <ul class="titre-center">
+                <li>
+                    <h2>Frais kilométrique</h2>
+                </li>
+            </ul> -->
             <ul class="nav pull-right top-menu">
                 <li>
                     <div class="sidebar-toggle-box">
@@ -72,7 +77,7 @@
           </li>
           <!-- DECONNEXION -->
           <li class="mt"> 
-            <a href="#">
+            <a href="index.php">
               <i class="fa fa-power-off"></i>
               <span>DECONNEXION</span>
               </a>
@@ -84,56 +89,139 @@
     <section id="main-content">
       <section class="wrapper">
           <div class="center">
-            <h1>Historique</h1>
-            <table class="table table-striped">
+            <!-- HISTORIQUE -->
+            <table class="table table-striped table-advance table-hover">
+                <h4><i class="fa fa-angle-right"></i> Historique</h4>
                 <thead>
-                    <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Validation</th>
-                    <th scope="col">Autre</th>
-                    </tr>
+                  <tr>
+                    <th><i class="fa fa-calendar"></i> Date</th>
+                    <th><i class=" fa fa-edit"></i> Status</th>
+                    <th class="hidden-phone"><i class="fa fa-question-circle"></i> Descrition</th>
+                    <th class=""><i class="fa fa-wrench"></i> Modification</th>
+                    <th></th>
+                  </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <th scope="row"><input type="checkbox" name="" id=""></th>
-                    <td onmouseover="openCity(event, 'London')">12/04/2018</td>
-                    <td>--</td>
-                    <td>@--</td>
-                    </tr>
-                    <tr>
-                    <th scope="row"><input type="checkbox" name="" id=""></th>
-                    <td>14/04/2018</td>
-                    <td>--</td>
-                    <td>@--</td>
-                    </tr>
-                    <tr>
-                    <th scope="row"><input type="checkbox" name="" id=""></th>
-                    <td>15/04/2018</td>
-                    <td>--</td>
-                    <td>@--</td>
-                    </tr>
-
-                    <tr>
-                    <th scope="row"><input type="checkbox" name="" id=""></th>
-                    <td>12/04/2018</td>
-                    <td>--</td>
-                    <td>@--</td>
-                    </tr>
-                    <tr>
-                    <th scope="row"><input type="checkbox" name="" id=""></th>
-                    <td>14/04/2018</td>
-                    <td>--</td>
-                    <td>@--</td>
-                    </tr>
-                    <tr>
-                    <th scope="row"><input type="checkbox" name="" id=""></th>
-                    <td>15/04/2018</td>
-                    <td>--</td>
-                    <td>@--</td>
-                    </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">17/09/2018</a>
+                    </td>
+                    <td class="hidden-phone">En attente</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">
+                      15/09/2018
+                        </a>
+                    </td>
+                    <td class="hidden-phone">En attente</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">
+                      12/09/2018
+                        </a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">10/09/2018</a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">04/09/2018</a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">25/08/2018</a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">
+                      20/08/2018
+                        </a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">
+                      11/08/2018
+                        </a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">09/08/2018</a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a href="basic_table.html#">05/08/2018</a>
+                    </td>
+                    <td class="hidden-phone">Validé</td>
+                    <td>-- </td>
+                    <td>
+                      <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
+                    </td>
+                  </tr>
                 </tbody>
-                </table>
+              </table>
           </div>
       </section>
     </section>
@@ -146,7 +234,7 @@
   <script src="lib/jquery.scrollTo.min.js"></script>
   <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
   <script src="lib/common-scripts.js"></script>
-  <script>
+  <!-- <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -160,7 +248,7 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-</script>
+</script> -->
 </body>
 
 </html>

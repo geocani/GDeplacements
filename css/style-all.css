@@ -77,6 +77,28 @@ ul.sidebar-menu{
 .wrapper-login{
     margin-top: 100px;
 }
+.titre-center{
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.637);
+}
+
+.border{
+    border: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 768px) {
