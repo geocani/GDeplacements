@@ -18,7 +18,19 @@
 </head>
 
 <body>
-  <section id="container">
+<?php
+  session_start();
+  // Connexion BDD
+  $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
+
+  // $user_id = $_GET['id'];
+
+  // if ($user_id == $_SESSION['id']){ // Vérifie si l'id en GET est bien celui de la SESSION
+
+?>
+
+
+<section id="container">
     <!--HEADER MENU FIX-->
     <header class="header color233C4F">
         <div class="top-menu">
@@ -48,9 +60,9 @@
       <div id="sidebar" class="nav-collapse">
         <ul class="sidebar-menu" id="nav-accordion">
             <li ><h5 class="">PROFIL</h5></li> <!-- TITRE-->
-            <li><p class="text-color"><i class="fa fa-user ico-size"></i>Nom Prénom</p></li>
-            <li><p class="text-color"><i class="fa fa-briefcase ico-size"></i>Fonction</p></li>
-            <li><p class="text-color"><i class="fa fa-drivers-license ico-size"></i>Grade</p></li>
+            <li><p class="text-color"><i class="fa fa-user ico-size"></i><?php echo $_SESSION['nom']." ".$_SESSION['prenom']; ?></p></li>
+            <li><p class="text-color"><i class="fa fa-briefcase ico-size"></i><?php echo $_SESSION['service'];?></p></li>
+            <li><p class="text-color"><i class="fa fa-drivers-license ico-size"></i><?php echo $_SESSION['grade'];?></p></li>
           <!-- OUTILS-->
           <li ><h5 class="">OUTILS</h5></li>
           <li class="sub-menu">
@@ -60,7 +72,7 @@
               </a>
             <ul class="sub">
                 <li><a class="active" href="#"><i class="fa fa-clock-o pad-ico-profil"></i>Historique</a></li>
-                <li><a href="#"><i class="fa fa fa-car pad-ico-profil"></i>Voiture</a></li>
+                <li><a href="form.php"><i class="fa fa fa-car pad-ico-profil"></i>Voiture</a></li>
                 <li><a href="#"><i class="fa fa-bus pad-ico-profil"></i>Transport en commun</a></li>
             </ul>
           </li>
@@ -77,7 +89,7 @@
           </li>
           <!-- DECONNEXION -->
           <li class="mt"> 
-            <a href="index.php">
+            <a href="deconnexion.php">
               <i class="fa fa-power-off"></i>
               <span>DECONNEXION</span>
               </a>
