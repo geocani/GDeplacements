@@ -21,7 +21,7 @@
 <?php
   session_start();
   // Connexion BDD
-  $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
+  // $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
 
   // $user_id = $_GET['id'];
 
@@ -39,11 +39,11 @@
                     <img src="img/logo.png" alt="Logo" width="150px">
                 </li>
             </ul>
-            <!-- <ul class="titre-center">
+            <ul class="titre-center">
                 <li>
-                    <h2>Frais kilométrique</h2>
+                    <h2>Frais de déplacement et de séjour</h2>
                 </li>
-            </ul> -->
+            </ul>
             <ul class="nav pull-right top-menu">
                 <li>
                     <div class="sidebar-toggle-box">
@@ -102,8 +102,10 @@
       <section class="wrapper">
           <div class="center">
             <!-- HISTORIQUE -->
+            <div class="titre-page">
+        <h2>HISTORIQUE</h2>
+    </div>
             <table class="table table-striped table-advance table-hover">
-                <h4><i class="fa fa-angle-right"></i> Historique</h4>
                 <thead>
                   <tr>
                     <th><i class="fa fa-calendar"></i> Date</th>

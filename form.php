@@ -92,7 +92,9 @@
 
 <!-- FORM -->
 <div class="container form-frais">
-    <div class="titre-page"><h2>FORMULAIRE</h2></div>
+    <div class="titre-page">
+        <h2>FORMULAIRE</h2>
+    </div>
     <form>
         <!--Date et heure de départ-->
         <h4>Date et heure de départ.</h4>

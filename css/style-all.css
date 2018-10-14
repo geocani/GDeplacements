@@ -110,7 +110,7 @@ ul.sidebar-menu{
 
 
 
-FAIRE UNE GRID DE 3
+
 
 
 
@@ -119,11 +119,15 @@ FAIRE UNE GRID DE 3
 @media (min-width: 768px) {
 
     .sidebar-toggle-box{
-        /* display: none; */
+        
+        display: none;
 
     }
 }
 @media (max-width: 768px) {
+    .titre-center{
+        display: none;
 
+    }
 }
 
