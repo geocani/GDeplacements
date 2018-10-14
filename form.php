@@ -101,15 +101,15 @@
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="date-trajet">Date:</label>
-                <input type="date" class="form-control" id="date-trajet" placeholder="Heure">
+                <input type="date" name="date-trajet" class="form-control" id="date-trajet" placeholder="Heure">
             </div>
             <div class="form-group col-md-4">
                 <label for="heure-administrative">Départ:</label>
-                <input type="text" class="form-control" id="heure-administrative" placeholder="résidence administrative">
+                <input type="text" name="heure-administrative" class="form-control" id="heure-administrative" placeholder="résidence administrative">
             </div>
             <div class="form-group col-md-4">
                 <label for="heure-domicile">Départ:</label>
-                <input type="text" class="form-control" id="heure-domicile" placeholder="Domicile">
+                <input type="text" name="heure-domicile" class="form-control" id="heure-domicile" placeholder="Domicile">
             </div>
         </div>
         <!--Commune visitée-->
@@ -117,19 +117,19 @@
         <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="nom-commune">Nom:</label>
-                <input type="time" class="form-control" id="nom-commune" placeholder="Ex: Namur">
+                <input type="time" name="nom-commune" class="form-control" id="nom-commune" placeholder="Ex: Namur">
             </div>
             <div class="form-group col-md-3">
                 <label for="heure-arrivee">Heure d'arrivée:</label>
-                <input type="time" class="form-control" id="heure-arrivee" placeholder="">
+                <input type="time" name="heure-arrivee" class="form-control" id="heure-arrivee" placeholder="">
             </div>
             <div class="form-group col-md-3">
                 <label for="heure-depart">Heure de retour:</label>
-                <input type="time" class="form-control" id="heure-depart" placeholder="">
+                <input type="time" name="heure-depart" class="form-control" id="heure-depart" placeholder="">
             </div>
             <div class="form-group col-md-3">
                 <label for="fin-mission">Heure de fin de mission:</label>
-                <input type="time" class="form-control" id="fin-mission" placeholder="">
+                <input type="time" name="fin-mission" class="form-control" id="fin-mission" placeholder="">
             </div>
         </div>
         <!--KM parcourus-->
@@ -137,21 +137,21 @@
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="km-aglomeration">Dans l'agomération:</label>
-                <input type="number" class="form-control" id="km-aglomeration" placeholder="Ex: 10">
+                <input type="number" name="km-aglomeration" class="form-control" id="km-aglomeration" placeholder="Ex: 10">
             </div>
             <div class="form-group col-md-4">
                 <label for="km-hors">Hors aglomération:</label>
-                <input type="number" class="form-control" id="km-hors" placeholder="Ex: 10">
+                <input type="number" name="km-hors" class="form-control" id="km-hors" placeholder="Ex: 10">
             </div>
             <div class="form-group col-md-4">
                 <label for="transport">Transport en commun:</label>
-                <input type="number" class="form-control" id="transport" placeholder="Ex: 2.50">
+                <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2.50">
             </div>
         </div>
         <!--Motif-->
         <div class="form-group">
             <label for="motif">Motif:</label>
-            <textarea class="form-control" id="motif" rows="3"></textarea>
+            <textarea class="form-control" name="motif" id="motif" rows="3"></textarea>
         </div>
         <!---->
         <div class="form-group">
