@@ -1,9 +1,16 @@
 
 
 @media (max-width: 768px) {
+    .titre-center{
+        display: none;
 
+    }
     .header {
         position: absolute;
+    }
+    .titre-page{
+      padding-top: 0;
+     
     }
 
     /*sidebar*/

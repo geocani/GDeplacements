@@ -80,7 +80,7 @@ ul.sidebar-menu{
 .titre-center{
     text-align: center;
     padding-top: 10px;
-    color: rgba(255, 255, 255, 0.637);
+    color: rgba(255, 255, 255, 0.918);
 }
 
 .border{
@@ -91,6 +91,12 @@ ul.sidebar-menu{
 }
 .form-frais{
     margin-top: 100px;
+}
+.titre-page h2{
+    text-align: center;
+    margin-bottom: 30px;
+    /* padding-top: 30px; */
+
 }
 
 
@@ -104,7 +110,7 @@ ul.sidebar-menu{
 
 
 
-
+FAIRE UNE GRID DE 3
 
 
 
@@ -113,7 +119,8 @@ ul.sidebar-menu{
 @media (min-width: 768px) {
 
     .sidebar-toggle-box{
-        display: none;
+        /* display: none; */
+
     }
 }
 @media (max-width: 768px) {
