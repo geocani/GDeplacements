@@ -50,6 +50,7 @@
         }
 
         // INCLUDE
+        include 'bdd.php';
         include 'view/header.php';
         include 'view/side.php';
         include 'login.php';
