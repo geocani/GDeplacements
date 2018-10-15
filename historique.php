@@ -22,11 +22,12 @@
   session_start();
   // Connexion BDD
    $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
-
-  $user_id = $_GET['id'];
-
-  if ($user_id == $_SESSION['id']){ // Vérifie si l'id en GET est bien celui de la SESSION
-  }
+    // Lecture BDD
+    $affiche_trajet = $bdd->query('SELECT * FROM trajets WHERE id=2');
+    while($trajet = $affiche_trajet->fetch()){
+    $t1 = $trajet['date_trajet'];
+    $t3 = $trajet['motif'];
+   }
 ?>
 
 
@@ -118,10 +119,10 @@
                 <tbody>
                   <tr>
                     <td>
-                      <a href="basic_table.html#">17/09/2018</a>
+                      <p><?php if(isset($t1)){echo $t1;}?></p>
                     </td>
                     <td class="hidden-phone">En attente</td>
-                    <td>-- </td>
+                    <td><?php if(isset($t1)){echo $t3;}?> </td>
                     <td>
                       <button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
                       <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button>
