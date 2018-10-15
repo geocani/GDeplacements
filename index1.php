@@ -23,6 +23,7 @@
     // Connexion BDD
     $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
 
+
     if (isset($_POST['log'])){
       if (!empty($_POST['login']) AND !empty($_POST['pass'])){
 

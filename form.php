@@ -19,13 +19,36 @@
 
 <body>
     <?php
-        // session_start();
+        session_start();
         // Connexion BDD
-        // $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
-
+        $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
         // $user_id = $_GET['id'];
-
         // if ($user_id == $_SESSION['id']){ // Vérifie si l'id en GET est bien celui de la SESSION
+        // }
+        // if(isset($_POST['send-trajet'])){
+        //     $ok = "ok";
+        // }
+    ?>
+    <?php
+        if (isset($_POST['send-trajet'])){
+            // Nomination variable POST
+            $date_trajet = $_POST['date-trajet'];
+            $heure_administrative = $_POST['heure-administrative'];
+            $heure_domicile = $_POST['heure-domicile'];
+            $nom_commune = $_POST['nom-commune'];
+            $heure_arrivee = $_POST['heure-arrivee'];
+            $heure_depart = $_POST['heure-depart'];
+            $fin_mission = $_POST['fin-mission'];
+            $km_aglomeration = $_POST['km-aglomeration'];
+            $km_hors = $_POST['km-hors'];
+            $transport = $_POST['transport'];
+            $motif = $_POST['motif'];
+            // Ecrire dans la BDD
+            $insert_trajet = $bdd->prepare("INSERT INTO trajets(date_trajet, heure_administrative, heure_domicile, nom_commune, heure_arrivee, heure_depart, fin_mission, km_aglomeration, km_hors, transport, motif) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $insert_trajet->execute(array($date_trajet, $heure_administrative, $heure_domicile, $nom_commune, $heure_arrivee, $heure_depart, $fin_mission, $km_aglomeration, $km_hors, $transport, $motif));
+            // Redirection
+            header("location: historique.php?id=".$_SESSION['id']);
+        }
     ?>
 <section id="container">
 <!--HEADER MENU FIX-->
@@ -57,17 +80,17 @@
     <div id="sidebar" class="nav-collapse">
         <ul class="sidebar-menu" id="nav-accordion">
             <li ><h5 class="">PROFIL</h5></li> <!-- TITRE-->
-            <li><p class="text-color"><i class="fa fa-user ico-size"></i><?php //echo $_SESSION['nom']." ".$_SESSION['prenom']; ?></p></li>
-            <li><p class="text-color"><i class="fa fa-briefcase ico-size"></i><?php //echo $_SESSION['service'];?></p></li>
-            <li><p class="text-color"><i class="fa fa-drivers-license ico-size"></i><?php //echo $_SESSION['grade'];?></p></li>
+            <li><p class="text-color"><i class="fa fa-user ico-size"></i><?php echo $_SESSION['nom']." ".$_SESSION['prenom']; ?></p></li>
+            <li><p class="text-color"><i class="fa fa-briefcase ico-size"></i><?php echo $_SESSION['service'];?></p></li>
+            <li><p class="text-color"><i class="fa fa-drivers-license ico-size"></i><?php echo $_SESSION['grade'];?></p></li>
             <!-- OUTILS-->
             <li ><h5 class="">OUTILS</h5></li>
             <li class="sub-menu">
                 <a class="active" href="javascript:;"><i class="fa fa-plus"></i><span>Formulaire</span></a>
                 <ul class="sub">
-                    <li><a class="active" href="#"><i class="fa fa-clock-o pad-ico-profil"></i>Historique</a></li>
-                    <li><a href="#"><i class="fa fa fa-car pad-ico-profil"></i>Voiture</a></li>
-                    <li><a href="#"><i class="fa fa-bus pad-ico-profil"></i>Transport en commun</a></li>
+                    <li><a class="active" href="historique.php?id=<?php $_SESSION['id']?>"><i class="fa fa-clock-o pad-ico-profil"></i>Historique</a></li>
+                    <li><a href="#"><i class="fa fa fa-car pad-ico-profil"></i>Nouveau formulaire</a></li>
+                    <!-- <li><a href="#"><i class="fa fa-bus pad-ico-profil"></i>Transport en commun</a></li> -->
                 </ul>
             </li>
             <!-- VALIDATION-->
@@ -95,7 +118,7 @@
     <div class="titre-page">
         <h2>FORMULAIRE</h2>
     </div>
-    <form>
+    <form action="" method="POST">
         <!--Date et heure de départ-->
         <h4>Date et heure de départ.</h4>
         <div class="form-row">
@@ -104,12 +127,12 @@
                 <input type="date" name="date-trajet" class="form-control" id="date-trajet" placeholder="Heure">
             </div>
             <div class="form-group col-md-4">
-                <label for="heure-administrative">Départ:</label>
-                <input type="text" name="heure-administrative" class="form-control" id="heure-administrative" placeholder="résidence administrative">
+                <label for="heure-administrative">Départ résidence administrative:</label>
+                <input type="time" name="heure-administrative" class="form-control" id="heure-administrative" placeholder="résidence administrative">
             </div>
             <div class="form-group col-md-4">
-                <label for="heure-domicile">Départ:</label>
-                <input type="text" name="heure-domicile" class="form-control" id="heure-domicile" placeholder="Domicile">
+                <label for="heure-domicile">Départ domicile:</label>
+                <input type="time" name="heure-domicile" class="form-control" id="heure-domicile" placeholder="Domicile">
             </div>
         </div>
         <!--Commune visitée-->
@@ -117,7 +140,7 @@
         <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="nom-commune">Nom:</label>
-                <input type="time" name="nom-commune" class="form-control" id="nom-commune" placeholder="Ex: Namur">
+                <input type="text" name="nom-commune" class="form-control" id="nom-commune" placeholder="Ex: Namur">
             </div>
             <div class="form-group col-md-3">
                 <label for="heure-arrivee">Heure d'arrivée:</label>
@@ -137,15 +160,15 @@
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="km-aglomeration">Dans l'agomération:</label>
-                <input type="number" name="km-aglomeration" class="form-control" id="km-aglomeration" placeholder="Ex: 10">
+                <input type="number" name="km-aglomeration" class="form-control" id="km-aglomeration" placeholder="Ex: 10" step="0.01">
             </div>
             <div class="form-group col-md-4">
                 <label for="km-hors">Hors aglomération:</label>
-                <input type="number" name="km-hors" class="form-control" id="km-hors" placeholder="Ex: 10">
+                <input type="number" name="km-hors" class="form-control" id="km-hors" placeholder="Ex: 10" step="0.01">
             </div>
             <div class="form-group col-md-4">
                 <label for="transport">Transport en commun:</label>
-                <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2.50">
+                <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2,50" step="0.01">
             </div>
         </div>
         <!--Motif-->
@@ -166,8 +189,16 @@
                 </p>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Envoyer le formulaire</button>
+        <input type="submit" class="btn btn-primary" name="send-trajet" value="Envoyer le formulaire">
     </form>
+</div>
+<div>
+<p>OOOOOOOOOKKKKKKKKKKK</p>
+<?php 
+    if(isset($ok)){
+        echo $ok;
+    }
+?>
 </div>
 
 

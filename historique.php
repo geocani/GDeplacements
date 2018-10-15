@@ -21,12 +21,12 @@
 <?php
   session_start();
   // Connexion BDD
-  // $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
+   $bdd = new PDO("mysql: host=localhost; dbname=frais; charset=utf8", "root", "");
 
-  // $user_id = $_GET['id'];
+  $user_id = $_GET['id'];
 
-  // if ($user_id == $_SESSION['id']){ // Vérifie si l'id en GET est bien celui de la SESSION
-
+  if ($user_id == $_SESSION['id']){ // Vérifie si l'id en GET est bien celui de la SESSION
+  }
 ?>
 
 
@@ -72,8 +72,8 @@
               </a>
             <ul class="sub">
                 <li><a class="active" href="#"><i class="fa fa-clock-o pad-ico-profil"></i>Historique</a></li>
-                <li><a href="form.php"><i class="fa fa fa-car pad-ico-profil"></i>Voiture</a></li>
-                <li><a href="#"><i class="fa fa-bus pad-ico-profil"></i>Transport en commun</a></li>
+                <li><a href="form.php?id=<?php $_SESSION['id']?>"><i class="fa fa fa-car pad-ico-profil"></i>Nouveau formulaire</a></li>
+                <!-- <li><a href="#"><i class="fa fa-bus pad-ico-profil"></i>Transport en commun</a></li> -->
             </ul>
           </li>
           <!-- VALIDATION-->

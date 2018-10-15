@@ -80,7 +80,7 @@ ul.sidebar-menu{
 .titre-center{
     text-align: center;
     padding-top: 10px;
-    color: rgba(255, 255, 255, 0.918);
+    color: rgba(255, 255, 255, 0.637);
 }
 
 .border{
@@ -92,20 +92,11 @@ ul.sidebar-menu{
 .form-frais{
     margin-top: 100px;
 }
+
 .titre-page h2{
+    padding-bottom: 40px;
     text-align: center;
-    margin-bottom: 30px;
-    /* padding-top: 30px; */
-
 }
-
-
-#timepicker:before {
-    content:'Time:';
-    margin-right:.6em;
-    color:#9d9d9d;
-    }
-
 
 
 
@@ -119,15 +110,13 @@ ul.sidebar-menu{
 @media (min-width: 768px) {
 
     .sidebar-toggle-box{
-        
         display: none;
-
     }
+
 }
 @media (max-width: 768px) {
     .titre-center{
         display: none;
-
     }
 }
 
