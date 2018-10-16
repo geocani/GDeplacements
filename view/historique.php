@@ -3,7 +3,7 @@
           <div class="center">
             <!-- HISTORIQUE -->
             <div class="titre-page">
-        <h2>HISTORIQUE</h2>
+        <h2><i class="fa fa-clock-o"></i><span>Historique</span><h2>
     </div>
     <?php
         $affiche_trajet = $bdd->query('SELECT * FROM trajets WHERE id_agent=7');
@@ -27,7 +27,7 @@
                     <td class="hidden-phone">En attente</td>
                     <td><?php echo $trajet['motif'];?> </td>
                     <td>
-                      <a href="modif.php"><button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
+                      <a href="modification_trajet.php"><button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
                        <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button></a>
                     </td>
                   </tr>

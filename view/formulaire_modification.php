@@ -29,7 +29,7 @@
         <!-- FORM -->
         <div class="container form-frais">
             <div class="titre-page">
-                <h2>FORMULAIRE</h2>
+            <h2><i class="fa fa-pencil"></i><span> MODIFICATION DE TRAJET</span><h2>
             </div>
             <form action="" method="POST">
                 <!--Date et heure de départ-->
@@ -119,7 +119,7 @@
                         </p>
                     </div>
                 </div>
-                <input type="submit" class="btn btn-primary" name="send-trajet" value="Envoyer le formulaire">
+                <input type="submit" class="btn btn-primary" name="send-trajet" value="Modifier le formulaire">
             </form>
         </div>
     </section>

@@ -13,8 +13,8 @@
             $transport = $_POST['transport'];
             $motif = $_POST['motif'];
             // Ecrire dans la BDD
-            $insert_trajet = $bdd->prepare("INSERT INTO trajets(id_agent, date_trajet, heure_administrative, heure_domicile, nom_commune, heure_arrivee, heure_depart, fin_mission, km_aglomeration, km_hors, transport, motif) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            $insert_trajet->execute(array($_SESSION['id_agent'], $date_trajet, $heure_administrative, $heure_domicile, $nom_commune, $heure_arrivee, $heure_depart, $fin_mission, $km_aglomeration, $km_hors, $transport, $motif));
+            $insert_trajet = $bdd->prepare("INSERT INTO trajets(id_agent, date_trajet, heure_administrative, heure_domicile, nom_commune, heure_arrivee, heure_depart, fin_mission, km_aglomeration, km_hors, transport, motif, status_trajet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $insert_trajet->execute(array($_SESSION['id_agent'], $date_trajet, $heure_administrative, $heure_domicile, $nom_commune, $heure_arrivee, $heure_depart, $fin_mission, $km_aglomeration, $km_hors, $transport, $motif, "En cours"));
             // Redirection
             header("location: historique.php?id=".$_SESSION['id_agent']);
         }
@@ -29,7 +29,7 @@
         <!-- FORM -->
         <div class="container form-frais">
             <div class="titre-page">
-                <h2>FORMULAIRE</h2>
+            <h2><i class="fa fa fa-car"></i><span> CREATION DE TRAJET</span><h2>
             </div>
             <form action="" method="POST">
                 <!--Date et heure de départ-->
