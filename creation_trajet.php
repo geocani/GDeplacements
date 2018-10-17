@@ -20,7 +20,7 @@
     <section id="container">
 
     <?php
-        session_start();
+       
         // INCLUDE
         include 'model/bdd.php';
         include 'model/log.php';
