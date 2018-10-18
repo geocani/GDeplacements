@@ -62,20 +62,16 @@
             <?php
                 } // FIN BOUCLE
             } else {
-
-
-
-                echo " 
-                
-                
-                
-                ";
+                $attention = "attention";
+                $attention2 = "pas de trajets";
             }
             ?>
         </div>
 
 <!-- <a href="suppression-trajet-poo.php?id_trajet=<?php //echo $trajet['id_trajet']; ?>" -->
-
+   <h1> <?php if (isset($attention)){ 
+       echo $attention; 
+    }?></h1>
 
     </section>
 </section>
