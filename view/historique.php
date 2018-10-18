@@ -38,8 +38,8 @@
                         </td>
                         <td class="hidden-phone">En attente</td>
                         <td>
-                            <a href="suppression-trajet-poo.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button>
-                            <button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button></a>
+                            <a href="modification_trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button></a>
+                            <a href="suppression-trajet-poo.php"><button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button></a>
                         </td>
                     </tr>
                 </tbody>
@@ -49,7 +49,7 @@
             ?>
         </div>
 
-
+<!-- <a href="suppression-trajet-poo.php?id_trajet=<?php //echo $trajet['id_trajet']; ?>" -->
 
 
 

@@ -8,7 +8,7 @@ try
 	$bddname = "frais";
 	$log = "root";
 	$pass = "";
-	$bdd = new PDO("mysql: host=$host; dbname=$bddname; charset=utf8", "$log", "$pass");
+	$bdd = new PDO("mysql: host=$host; dbname=$bddname; charset=utf8", $log, $pass);
 }
 catch(Exception $e)
 {
@@ -27,8 +27,11 @@ catch(Exception $e)
 
 // SUPPRESSION
 $supp = $bdd->prepare("DELETE FROM trajets WHERE id_trajet=?");   
-$supp->execute(array(14));
-header("location: historique.php?id=".$_SESSION['id_agent']);
+$supp->execute(array(30));
+echo ok
+// header("location: historique.php?id=".$_SESSION['id_agent']);
+
+
 
 
 
