@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <!--Séjours-->
-                <h4>Séjours.</h4>
+                <!-- <h4>Séjours.</h4>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="transport">Temps de séjours:</label>
@@ -100,7 +100,7 @@
                         <label for="transport">Frais réels limités au plafond:</label>
                         <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2,50" step="0.01">
                     </div>
-                </div>
+                </div> -->
                 <!--Motif-->
                 <div class="form-group">
                     <label for="motif">Motif:</label>
