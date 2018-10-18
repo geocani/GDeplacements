@@ -29,7 +29,7 @@
         include 'model/bdd.php';
         include 'view/header.php';
         include 'view/side.php';
-        include 'view/historique.php';
+        include 'view/visualisation.php';
     ?>
     
     </section>
