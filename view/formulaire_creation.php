@@ -29,7 +29,7 @@
         <!-- FORM -->
         <div class="container form-frais">
             <div class="titre-page">
-            <h2><i class="fa fa fa-car"></i><span> CREATION DE TRAJET</span><h2>
+            <h2><i class="fa fa fa-car pad-ico-profil"></i><span> CREATION DE TRAJET</span><h2>
             </div>
             <form action="" method="POST">
                 <!--Date et heure de départ-->

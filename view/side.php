@@ -27,8 +27,7 @@
               <span>Validation</span>
               </a>
             <ul class="sub">
-              <li><a href="#">Lien</a></li>
-              <li><a href="#">Lien</a></li>
+              <li><a href="#"><i class="fa fa-check pad-ico-profil"></i>Valider un trajet</a></li>
             </ul>
           </li>
 

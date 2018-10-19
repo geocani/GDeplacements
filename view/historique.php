@@ -10,7 +10,7 @@
         <div class="container center">
             <!-- HISTORIQUE -->
             <div class="titre-page">
-                <h2><i class="fa fa-clock-o"></i><span>Historique</span><h2>
+                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span>Historique</span><h2>
             </div>
             <!-- <table class="table table-sm table-bordered">
                 <thead>
@@ -55,6 +55,7 @@
                             <a href="visualisation.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"> <button class="btn btn-outline-success border"><i class="fa fa-eye "></i></button></a>
                             <a href="modification_trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-primary border"><i class="fa fa-pencil"></i></button></a>
                             <a href="suppression-trajet-poo.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button></a>
+                            <a href="suppression-trajet-poo.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-danger border"><i class="fa fa-share "></i></button></a>
                         </td>
                     </tr>
                 </tbody>
@@ -62,16 +63,18 @@
             <?php
                 } // FIN BOUCLE
             } else {
-                $attention = "attention";
+                $attention = "Aucun trajet";
                 $attention2 = "pas de trajets";
             }
             ?>
         </div>
 
 <!-- <a href="suppression-trajet-poo.php?id_trajet=<?php //echo $trajet['id_trajet']; ?>" -->
-   <h1> <?php if (isset($attention)){ 
+    
+   <h1 class="deb"> <?php if (isset($attention)){ 
        echo $attention; 
     }?></h1>
+   
 
     </section>
 </section>

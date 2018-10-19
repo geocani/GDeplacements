@@ -113,7 +113,7 @@
         <!-- FORM -->
         <div class="container form-frais">
             <div class="titre-page">
-            <h2><i class="fa fa-pencil"></i><span> MODIFICATION DE TRAJET</span><h2>
+            <h2><i class="fa fa-pencil pad-ico-profil"></i><span> MODIFICATION DE TRAJET</span><h2>
             </div>
             <form action="" method="POST">
                 <!--Date et heure de départ-->
