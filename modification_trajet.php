@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <section id="container">
+
 
     <?php
         // INCLUDE
@@ -27,7 +27,7 @@
         include 'view/formulaire_modification.php';
     ?>
     
-    </section>
+
     <!-- SCRIPT -->
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>

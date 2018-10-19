@@ -1,24 +1,24 @@
 <?php
-        if (isset($_POST['send-trajet'])){
-            // Nomination variable POST
-            $date_trajet = $_POST['date-trajet'];
-            $heure_administrative = $_POST['heure-administrative'];
-            $heure_domicile = $_POST['heure-domicile'];
-            $nom_commune = $_POST['nom-commune'];
-            $heure_arrivee = $_POST['heure-arrivee'];
-            $heure_depart = $_POST['heure-depart'];
-            $fin_mission = $_POST['fin-mission'];
-            $km_aglomeration = $_POST['km-aglomeration'];
-            $km_hors = $_POST['km-hors'];
-            $transport = $_POST['transport'];
-            $motif = $_POST['motif'];
-            // Ecrire dans la BDD
-            $insert_trajet = $bdd->prepare("INSERT INTO trajets(id_agent, date_trajet, heure_administrative, heure_domicile, nom_commune, heure_arrivee, heure_depart, fin_mission, km_aglomeration, km_hors, transport, motif, status_trajet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            $insert_trajet->execute(array($_SESSION['id_agent'], $date_trajet, $heure_administrative, $heure_domicile, $nom_commune, $heure_arrivee, $heure_depart, $fin_mission, $km_aglomeration, $km_hors, $transport, $motif, "En cours"));
-            // Redirection
-            header("location: historique.php?id=".$_SESSION['id_agent']);
-        }
-    ?>
+    if (isset($_POST['send-trajet'])){
+        // Nomination variable POST
+        $date_trajet = $_POST['date-trajet'];
+        $heure_administrative = $_POST['heure-administrative'];
+        $heure_domicile = $_POST['heure-domicile'];
+        $nom_commune = $_POST['nom-commune'];
+        $heure_arrivee = $_POST['heure-arrivee'];
+        $heure_depart = $_POST['heure-depart'];
+        $fin_mission = $_POST['fin-mission'];
+        $km_aglomeration = $_POST['km-aglomeration'];
+        $km_hors = $_POST['km-hors'];
+        $transport = $_POST['transport'];
+        $motif = $_POST['motif'];
+        // Ecrire dans la BDD
+        $insert_trajet = $bdd->prepare("INSERT INTO trajets(id_agent, date_trajet, heure_administrative, heure_domicile, nom_commune, heure_arrivee, heure_depart, fin_mission, km_aglomeration, km_hors, transport, motif, status_trajet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $insert_trajet->execute(array($_SESSION['id_agent'], $date_trajet, $heure_administrative, $heure_domicile, $nom_commune, $heure_arrivee, $heure_depart, $fin_mission, $km_aglomeration, $km_hors, $transport, $motif, "En cours"));
+        // Redirection
+        header("location: historique.php?id=".$_SESSION['id_agent']);
+    }
+?>
 
 
 
@@ -29,7 +29,7 @@
         <!-- FORM -->
         <div class="container form-frais">
             <div class="titre-page">
-            <h2><i class="fa fa fa-car pad-ico-profil"></i><span> CREATION DE TRAJET</span><h2>
+                <h2><i class="fa fa fa-car pad-ico-profil"></i><span> CREATION DE TRAJET</span><h2>
             </div>
             <form action="" method="POST">
                 <!--Date et heure de départ-->
@@ -110,12 +110,12 @@
                 <div class="form-group">
                     <div class="form-check">
                         <p>
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">Je déclare de ne pas bénéficier d'un libre parcours et/ou de bénéficier d'une rédution sur les chemins de fer et autobus.</label>
+                            <input class="form-check-input" type="checkbox" id="certif1">
+                            <label class="form-check-label" for="certif1">Je déclare de ne pas bénéficier d'un libre parcours et/ou de bénéficier d'une rédution sur les chemins de fer et autobus.</label>
                         </p>
                         <p>
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">J'affirme sur l'honneur que cette déclaration est sincère et complète à la somme de quarante et un euro, dix-huit cents.</label>
+                            <input class="form-check-input" type="checkbox" id="certif2">
+                            <label class="form-check-label" for="certif2">J'affirme sur l'honneur que cette déclaration est sincère et complète à la somme de quarante et un euro, dix-huit cents.</label>
                         </p>
                     </div>
                 </div>

@@ -17,8 +17,6 @@
 </head>
 
 <body>
-    <section id="container">
-
     <?php
        
         // INCLUDE
@@ -28,8 +26,7 @@
         include 'view/side.php';
         include 'view/formulaire_creation.php';
     ?>
-    
-    </section>
+
     <!-- SCRIPT -->
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>

@@ -10,9 +10,7 @@
     <!--external css-->
     <link href="assets/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!-- Custom Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive-test.css" rel="stylesheet">
     <link href="assets/css/style-all.css" rel="stylesheet">
@@ -21,8 +19,6 @@
 </head>
 
 <body>
-    <section id="container">
-
     <?php
         
         // INCLUDE
@@ -31,8 +27,6 @@
         include 'view/side.php';
         include 'view/historique.php';
     ?>
-    
-    </section>
     <!-- SCRIPT -->
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>

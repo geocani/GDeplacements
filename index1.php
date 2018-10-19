@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <section id="container">
+
 
     <?php
         // session_start();
@@ -29,7 +29,7 @@
         include 'view/login.php';
     ?>
     
-    </section>
+
     <!-- SCRIPT -->
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
