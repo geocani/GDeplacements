@@ -5,6 +5,10 @@
             <div class="titre-page">
                 <h2><i class="fa fa-clock-o pad-ico-profil"></i><span>Historique</span><h2>
             </div>
+                
+            <!---->
+            <table class="table table-sm table-bordered table-hover shad">
+                <tbody>
                 <?php
                     $affiche_trajet = $bdd->prepare("SELECT * FROM trajets WHERE id_agent = ? ORDER BY date_trajet DESC");
                     $affiche_trajet->execute(array($_SESSION['id_agent']));
@@ -14,10 +18,10 @@
                         while($trajet = $affiche_trajet->fetch()){
                             $trajet['id_trajet'];
                 ?>
-            <!---->
-            <table class="table table-sm table-bordered table-hover shad">
-                <tbody>
                     <tr>
+                        <td>
+                            0
+                        </td>
                         <td>
                            <p><i class="fa fa-calendar "></i> <?php echo $trajet['date_trajet'];?></p> 
                         </td>
@@ -29,9 +33,7 @@
                             <a href="#"><button class="btn btn-outline-success border"><i class="fa fa-share "></i></button></a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-                <?php
+                    <?php
                     } // FIN BOUCLE
                         } else {
                             $img_alert = "<img src='assets/img/sports-car.svg' width='200px'>" ;
@@ -39,6 +41,9 @@
                             $text2_alert = "Pour enregistrer un trajet cliquez sur <span class='bold'>'formulaire'</span> puis sur <span class='bold'>'nouveau trajet'</span>.";
                         }
                 ?>
+                </tbody>
+            </table>
+    
         </div>
         <div class="no-trajet">
             <h1 class="deb flou"> 
