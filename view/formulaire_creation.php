@@ -81,7 +81,7 @@
                     </div>
                     <div class="form-group col-md-4">
                         <label for="transport">Transport en commun:</label>
-                        <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2,50" step="0.01">
+                        <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2,50" step="0.01" Value="0">
                     </div>
                 </div>
                 <!--Séjours-->

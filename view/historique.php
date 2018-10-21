@@ -8,6 +8,14 @@
                 
             <!---->
             <table class="table table-sm table-bordered table-hover shad">
+                <thead>
+                    <tr>
+                    <th scope="col"><i class="fa fa-hashtag "></i></th>
+                    <th scope="col"><i class="fa fa-calendar "></i> Date <i class="fa fa-sort "></i></th>
+                    <th scope="col"><i class="fa fa-check "></i> Status <i class="fa fa-sort "></i></th>
+                    <th scope="col"><i class="fa fa-wrench "></i> Outils</th>
+                    </tr>
+                </thead>
                 <tbody>
                 <?php
                     $affiche_trajet = $bdd->prepare("SELECT * FROM trajets WHERE id_agent = ? ORDER BY date_trajet DESC");
@@ -20,17 +28,18 @@
                 ?>
                     <tr>
                         <td>
-                            0
+                            <input type="checkbox">
                         </td>
                         <td>
-                           <p><i class="fa fa-calendar "></i> <?php echo $trajet['date_trajet'];?></p> 
+                           <?php echo $trajet['date_trajet'];?>
                         </td>
                         <td class="hidden-phone">En attente</td>
                         <td>
-                            <a href="visualisation.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"> <button class="btn btn-outline-primary border"><i class="fa fa-eye "></i></button></a>
-                            <a href="modification_trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-info border"><i class="fa fa-pencil"></i></button></a>
-                            <a href="model/suppression-trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-danger border"><i class="fa fa-trash-o "></i></button></a>
-                            <a href="#"><button class="btn btn-outline-success border"><i class="fa fa-share "></i></button></a>
+                            <a href="visualisation.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"> <button class="btn btn-outline-success border" data-toggle="tooltip" data-placement="top" title="Récapitulatif du trajet"><i class="fa fa-eye "></i></button></a>
+                            <a href="visualisation.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"> <button class="btn btn-outline-primary border" data-toggle="tooltip" data-placement="top" title="Impression du trajet"><i class="fa fa-print "></i></button></a>
+                            <a href="modification_trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-info border" data-toggle="tooltip" data-placement="top" title="Modification du trajet"><i class="fa fa-pencil"></i></button></a>
+                            <a href="model/suppression-trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button class="btn btn-outline-danger border" data-toggle="tooltip" data-placement="top" title="Suppression du trajet"><i class="fa fa-trash-o "></i></button></a>
+                            <a href="#"><button class="btn btn-outline-warning border" data-toggle="tooltip" data-placement="top" title="Soumettre le trajet à la validation"><i class="fa fa-share "></i></button></a>
                         </td>
                     </tr>
                     <?php
