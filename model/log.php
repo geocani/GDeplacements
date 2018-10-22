@@ -19,6 +19,8 @@ if (isset($_POST['log'])){
                 $_SESSION['grade'] = $agent_info['grade'];
                 $_SESSION['login'] = $agent_info['login'];
                 header("location: historique.php?id=".$_SESSION['id_agent']);
+            }else{
+                $erreur =  "*Le nom d’utilisateur ou le mot de passe que vous avez entré n’est pas valide. Réessayez.";
             }
     }else{
         $erreur =  "*Le nom d’utilisateur ou le mot de passe que vous avez entré n’est pas valide. Réessayez.";
