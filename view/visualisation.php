@@ -18,23 +18,6 @@
     }
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section id="main-content">
     <section class="wrapper">
         <div class="center container">
@@ -94,7 +77,8 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-primary">Retour</button></a> 
+                    <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-primary">Retour</button></a>
+                    <a href="modification_trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button type="button" class="btn btn-primary">Modifier</button></a>  
                     <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-primary">Imprimer</button></a> 
                 </div>
                 <div class="col-md-1">

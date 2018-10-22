@@ -51,6 +51,12 @@
                         }
                 ?>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="1"><a href="#"><button class="btn btn-outline-warning border" data-toggle="tooltip" data-placement="top" title="Soumettre le trajet à la validation"><i class="fa fa-share "></i></button></a></td>
+                        <th colspan="3"> <i class="fa fa-check-square-o"></i> Envoyer tout les trajets coché en validation .</td>
+                    </tr>
+                </tfoot>
             </table>
     
         </div>
