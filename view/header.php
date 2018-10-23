@@ -2,7 +2,7 @@
     <div class="top-menu">
         <ul class="nav pull-left top-menu">
             <li>
-                <img src="assets/img/logo.png" alt="Logo" width="150px">
+                <img class="img_logo" src="assets/img/logo.png" alt="Logo" width="150px">
             </li>
         </ul>
         <ul class="titre-center">
