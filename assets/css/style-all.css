@@ -157,6 +157,9 @@ th{
 .deb-tit{
 
 }
+.off{
+    opacity: 0.2;
+}
 
 @media (min-width: 768px) {
 

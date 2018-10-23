@@ -25,7 +25,7 @@
         include 'model/bdd.php';
         include 'model/log.php';
         include 'view/header.php';
-        include 'view/side.php';
+        include 'view/side-off.php';
         include 'view/login.php';
     ?>
     
