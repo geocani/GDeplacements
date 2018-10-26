@@ -164,6 +164,10 @@ th{
     padding-left: 40px;
     padding-top: 10px;
 }
+.pas-membre{
+    margin-top: 10px;
+    text-align: center;
+}
 
 
 @media (min-width: 768px) {

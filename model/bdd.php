@@ -14,3 +14,4 @@ catch(Exception $e)
 	// Erreur
         die('Erreur : '.$e->getMessage());
 }
+

@@ -38,7 +38,7 @@
                             <a href="visualisation.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"> <button class="btn btn-outline-success border" data-toggle="tooltip" data-placement="top" title="Récapitulatif du trajet"><i class="fa fa-eye "></i></button></a>
                             <a href="visualisation.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class="hidden-phone"> <button class="btn btn-outline-primary border" data-toggle="tooltip" data-placement="top" title="Impression du trajet"><i class="fa fa-print "></i></button></a>
                             <a href="modification_trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class="hidden-phone"><button class="btn btn-outline-info border" data-toggle="tooltip" data-placement="top" title="Modification du trajet"><i class="fa fa-pencil"></i></button></a>
-                            <a href="model/suppression-trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class="hidden-phone"><button class="btn btn-outline-danger border" data-toggle="tooltip" data-placement="top" title="Suppression du trajet"><i class="fa fa-trash-o "></i></button></a>
+                            <a href="model/suppression-trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class=""><button class="btn btn-outline-danger border" data-toggle="tooltip" data-placement="top" title="Suppression du trajet"><i class="fa fa-trash-o "></i></button></a>
                             <a href="#" class="hidden-phone"><button class="btn btn-outline-warning border" data-toggle="tooltip" data-placement="top" title="Soumettre le trajet à la validation"><i class="fa fa-share "></i></button></a>
                         </td>
                     </tr>

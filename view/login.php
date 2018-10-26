@@ -31,6 +31,9 @@
                         <div class="form-group"> 
                             <div class="col-sm-offset-2">
                                 <button type="submit" type="submit" name="log" class="btn btn-default" >Envoyer</button>
+                                <div class="pas-membre">
+                                    <p>Pas encore membre? <span> <a href="">Inscrivez vous</a> </span> </p>
+                                </div>
                             </div>
                         </div>
                     </form>
