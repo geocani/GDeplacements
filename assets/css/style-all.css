@@ -75,7 +75,7 @@ ul.sidebar-menu{
     margin-top: 0;
 }
 .wrapper-login{
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .titre-center{
     text-align: center;
@@ -167,6 +167,10 @@ th{
 .pas-membre{
     margin-top: 10px;
     text-align: center;
+}
+
+.pad-check{
+    padding-left: 20px;
 }
 
 

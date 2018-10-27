@@ -24,7 +24,7 @@
                         <div class="form-group"> 
                             <div class="col-sm-offset-2">
                                 <div class="checkbox">
-                                    <label><input type="checkbox"> Remember me</label>
+                                    <label><input type="checkbox"> Se souvenir de moi.</label>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                             <div class="col-sm-offset-2">
                                 <button type="submit" type="submit" name="log" class="btn btn-default" >Envoyer</button>
                                 <div class="pas-membre">
-                                    <p>Pas encore membre? <span> <a href="">Inscrivez vous</a> </span> </p>
+                                    <p>Pas encore membre? <span> <a href="inscription.php">Inscrivez vous.</a> </span> </p>
                                 </div>
                             </div>
                         </div>

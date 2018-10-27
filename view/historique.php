@@ -54,11 +54,12 @@
                 <tfoot class="hidden-phone">
                     <tr>
                         <th colspan="1"><a href="#"><button class="btn btn-outline-warning border" data-toggle="tooltip" data-placement="top" title="Soumettre le trajet à la validation"><i class="fa fa-share "></i></button></a></td>
-                        <th colspan="3"> <i class="fa fa-check-square-o"></i> Envoyer tout les trajets coché en validation .</td>
+                        <th colspan="3"> <input class="pad-check"type="checkbox"> Envoyer tout les trajets non envoyé en validation .</td>
                     </tr>
                 </tfoot>
             </table>
-    
+
+
         </div>
         <div class="no-trajet">
             <h1 class="deb flou"> 
@@ -82,4 +83,6 @@
         </div>
     </section>
 </section>
+
+
 
