@@ -3,7 +3,7 @@
         <div class="container center">
             <!-- HISTORIQUE -->
             <div class="titre-page">
-                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span>Historique</span><h2>
+                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span >Historique</span><h2>
             </div>
                 
             <!---->
@@ -47,7 +47,7 @@
                         } else {
                             $img_alert = "<img src='assets/img/sports-car.svg' width='200px'>" ;
                             $text_alert = "Vous n'avez éfectué aucun trajet.";
-                            $text2_alert = "Pour enregistrer un trajet cliquez sur <span class='bold'>'formulaire'</span> puis sur <span class='bold'>'nouveau trajet'</span>.";
+                            $text2_alert = "Pour enregistrer un trajet cliquez sur <span class='bold'>'Trajet/Frais'</span> puis sur <span class='bold'>'nouveau trajet'</span>.";
                         }
                 ?>
                 </tbody>

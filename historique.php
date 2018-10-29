@@ -14,6 +14,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive-test.css" rel="stylesheet">
     <link href="assets/css/style-all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <title>frais kilometrique</title>
 </head>

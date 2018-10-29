@@ -16,7 +16,7 @@
             <!-- OUTILS-->
             <li ><h5 class="">OUTILS:</h5></li>
             <li class="sub-menu">
-                <a class="" href="javascript:;" ><i class="fa fa-plus"></i><span>Formulaire</span></a>
+                <a class="" href="javascript:;" ><i class="fa fa-plus"></i><span>Trajets / Frais</span></a>
                 <ul class="sub">
                     <li><a href="historique.php"><i class="fa fa-clock-o pad-ico-profil"></i>Historique</a></li>
                     <li><a href="creation_trajet.php"><i class="fa fa fa-car pad-ico-profil"></i>Nouveau trajet</a></li>

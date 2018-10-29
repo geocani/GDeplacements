@@ -1,4 +1,4 @@
-<section id="main-content">
+<section class="pg" id="">
     <section class="wrapper wrapper-login">
         <div class="rouge">
             <div class="row">
@@ -18,7 +18,7 @@
                                 <input type="text" class="form-control" name="login" id="login" placeholder="Enter login">
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="pwd">Password:</label>
+                            <label class="control-label" for="pwd">Mot de passe:</label>
                                 <input type="password" class="form-control" name="pass" id="pwd" placeholder="Enter password">
                         </div>
                         <div class="form-group"> 
@@ -33,9 +33,6 @@
                                 <button type="submit" type="submit" name="log" class="btn btn-default" >Envoyer</button>
                                 <div class="pas-membre">
                                     <p>Pas encore membre? <span> <a href="inscription.php">Inscrivez vous.</a> </span> </p>
-                                </div>
-                                <div class="pas-membre">
-                                    <p>pdf? <span> <a href="fpdf/test.php">Inscrivez vous.</a> </span> </p>
                                 </div>
                             </div>
                         </div>

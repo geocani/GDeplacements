@@ -7,7 +7,8 @@
         </ul>
         <ul class="titre-center">
             <li>
-                <h2>Frais de déplacement et de séjour</h2>
+                <!-- <h2>Frais de déplacement et de séjour</h2> -->
+                <h2>FRAIS DE DEPLACEMENT ET DE SEJOUR</h2>
             </li>
         </ul>
         <ul class="nav pull-right top-menu">
