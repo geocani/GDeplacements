@@ -1,35 +1,7 @@
 
 <?php
     if (isset($_POST['inscription'])){
-        if(!empty($_POST['login'])){
-            if(!empty($_POST['pass1'])){
-                if(!empty($_POST['pass2'])){
-                    // Verifier
-                    if($_POST['pass1'] === $_POST['pass2']){
-                        $affiche_trajet = $bdd->prepare("SELECT * FROM agents WHERE login = ?");
-                        $affiche_trajet->execute(array($_POST["login"])); 
-                        $req_ok = $affiche_trajet->rowCount();
-                        if ($req_ok != 1){
-                            // Ecrire dans la BDD
-                            $insert_login = $bdd->prepare("INSERT INTO agents(login, mdp) VALUES (?, ?)");
-                            $insert_login->execute(array($_POST['login'], $_POST['pass1']));
-                            // Redirection
-                            header("location: index.php");
-                        }else{
-                            $erreur = "Ce login existe déja.";
-                        }
-                    }else{
-                        $erreur = "* Mot de passe différent";
-                    }
-                }else{
-                    $erreur = "* veuillez confirmer votre mot de passe.";
-                }
-            }else{
-                $erreur = "* Veuillez choisir un mot de passe.";
-            }
-        }else{
-            $erreur = "* Veuillez choisir un login.";
-        }
+        $erreur =  "*OOOOOOOOOOOKKKKKKKKK";
     }
 
 ?>
@@ -61,9 +33,6 @@
                         <div class="form-inline"> 
                             <div class="col-sm-offset-2">
                                 <button type="submit" name="inscription" class="btn btn-default" >Inscription</button>
-                            </div>
-                            <div class="col-sm-offset-2">
-                                <a href="index.php"><button type="submit" name="" class="btn btn-default" ></button>Retour </a>
                             </div>
 
                         </div>

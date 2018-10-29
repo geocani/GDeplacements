@@ -34,6 +34,9 @@
                                 <div class="pas-membre">
                                     <p>Pas encore membre? <span> <a href="inscription.php">Inscrivez vous.</a> </span> </p>
                                 </div>
+                                <div class="pas-membre">
+                                    <p>pdf? <span> <a href="fpdf/test.php">Inscrivez vous.</a> </span> </p>
+                                </div>
                             </div>
                         </div>
                     </form>
