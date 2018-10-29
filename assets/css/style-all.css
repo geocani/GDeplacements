@@ -161,8 +161,8 @@ th{
     opacity: 0.2;
 }
 .img_logo{
-    padding-left: 40px;
-    padding-top: 10px;
+    /* padding-left: 40px;
+    padding-top: 10px; */
 }
 .pas-membre{
     margin-top: 10px;
@@ -171,6 +171,23 @@ th{
 
 .pad-check{
     padding-left: 20px;
+}
+.image{
+    text-align: center;
+    width: 100%;
+}
+.img{
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.349);
+    width: 100px;
+    margin-bottom: 15px;
+}
+.nomprenom{
+    font-size: 1rem;
+}
+.profil{
+    margin-top: 20px;
 }
 
 
