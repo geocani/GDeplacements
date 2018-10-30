@@ -35,13 +35,16 @@
 ?>
 <section id="main-content">
     <section class="wrapper wrapper-login">
-        <div class="rouge">
+        <div class="pt-inscription">
             <div class="row">
                 <div class="col-sm-4">
                     <!-- col vide -->
                 </div>
                 <!-- FORM -->
                 <div class="col-sm-4"> 
+                <div class="ico-login">
+                            <img class="" src="assets/img/sports-car.svg" width="200px" alt="">
+                        </div>
                     <div class="titre-page">
                         <h2><i class="fa fa-sign-in pad-ico-profil"></i><span>Inscription</span><h2>
                     </div>

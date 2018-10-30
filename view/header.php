@@ -1,13 +1,12 @@
-<header class="header color233C4F">
+<header class="header">
     <div class="top-menu">
         <ul class="nav pull-left top-menu">
             <li>
-                <img class="img_logo" src="assets/img/logo.png" alt="Logo" width="150px">
+                <img src="assets/img/logo.png" alt="Logo">
             </li>
         </ul>
-        <ul class="titre-center">
+        <ul class="app_titre">
             <li>
-                <!-- <h2>Frais de déplacement et de séjour</h2> -->
                 <h2>FRAIS DE DEPLACEMENT ET DE SEJOUR</h2>
             </li>
         </ul>

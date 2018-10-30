@@ -1,6 +1,6 @@
 <section class="pg" id="">
     <section class="wrapper wrapper-login">
-        <div class="rouge">
+        <div class="pt-login">
             <div class="row">
                 <div class="col-sm-4">
                     <!-- col vide -->
@@ -15,11 +15,11 @@
                     <form class="form-horizontal" action="#" method="POST">
                         <div class="form-group">
                             <label class="control-label" for="login">Login:</label>
-                                <input type="text" class="form-control" name="login" id="login" placeholder="Enter login">
+                                <input type="text" class="form-control" name="login" id="login" placeholder="Votre login">
                         </div>
                         <div class="form-group">
                             <label class="control-label" for="pwd">Mot de passe:</label>
-                                <input type="password" class="form-control" name="pass" id="pwd" placeholder="Enter password">
+                                <input type="password" class="form-control" name="pass" id="pwd" placeholder="Votre mot de passe">
                         </div>
                         <div class="form-group"> 
                             <div class="col-sm-offset-2">

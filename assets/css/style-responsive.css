@@ -1,88 +1,13 @@
-@media (min-width: 980px) {
-    /*-----*/
-    .custom-bar-chart {
-        margin-bottom: 40px;
-    }
 
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-
-    .mail-box .sm-side {
-        width: 30%;
-    }
-
-    .mail-box .lg-side {
-        width: 70%;
-    }
-    /*-----*/
-    .custom-bar-chart {
-        margin-bottom: 40px;
-    }
-
-    /*chat room*/
-
-    .chat-room aside {
-        display: block;
-    }
-    .chat-room .left-side, .chat-room .mid-side, .chat-room .right-side, .chat-room .left-side footer {
-        width: 100%;
-    }
-
-    .chat-room .left-side footer {
-        position: relative;
-    }
-
-    ul.chat-user {
-        margin-bottom: 20px;
-    }
-
-    .chat-room .left-side , .chat-room .mid-side{
-        margin-bottom: 10px;
-
-    }
-
-    .chat-room .left-side .user-head , .chat-room-head, .chat-room .right-side .user-head{
-        border-radius: 4px 4px 0 0;
-        -webit-border-radius: 4px 4px 0 0;
-    }
-    .chat-room .left-side footer {
-        border-radius: 0 0 4px 4px;
-        -webkit-border-radius: 0 0 4px 4px;
-    }
-    /**/
-    .chat-room .right-side .user-head {
-        float: left;
-        width: 100%;
-    }
-
-    .chat-room .mid-side footer {
-        position: relative;
-        float: left;
-        width: 100%;
-        border-right: 0;
-    }
-
-    .chat-txt {
-        width: 65%;
-    }
-
-    .chat-room .right-side footer {
-        width: 100%;
-        position: relative;
-    }
-
-    .chat-room .mid-side {
-        margin-bottom: 0!important;
-    }
-
-
-}
 
 @media (max-width: 768px) {
 
     .header {
         position: absolute;
+    }
+    .titre-page{
+      padding-top: 0;
+     
     }
 
     /*sidebar*/
@@ -94,7 +19,7 @@
         width: 100%;
         z-index: 1001;
     }
-
+    
 
     /* body container */
     #main-content {
@@ -311,10 +236,8 @@
 
 }
 
-
-
 @media (max-width: 480px) {
-
+    
     .notify-row, .search, .dont-show , .inbox-head .sr-input, .inbox-head .sr-btn{
         display: none;
     }
@@ -417,71 +340,5 @@
         margin-bottom: 0!important;
     }
 }
-
-@media (max-width:320px) {
-    .login-social-link a {
-        padding: 15px 17px !important;
-    }
-
-    .notify-row, .search, .dont-show, .inbox-head .sr-input, .inbox-head .sr-btn {
-        display: none;
-    }
-
-    .mail-box aside {
-        display: block ;
-    }
-
-    .mail-box .sm-side , .mail-box .lg-side{
-        width: 100% ;
-    }
-
-    #top_menu .nav > li, ul.top-menu > li {
-        float: right;
-    }
-
-    .hidden-phone {
-        display: none !important;
-    }
-
-    .dataTables_filter {
-        float: left;
-    }
-
-    .dataTables_info {
-        margin-bottom: 10px;
-    }
-
-    .mail-option .btn {
-        margin-bottom: 0;
-    }
-
-    .mail-option .inbox-pagination {
-        margin-top: 10px;
-        float: left;
-    }
-
-    .chart-position {
-        margin-top: 0px;
-    }
-
-    .lock-wrapper {
-        margin: 10% auto;
-        max-width: 310px;
-    }
-    .lock-input {
-        width: 82%;
-    }
-
-    .cmt-form {
-        display: inline-block;
-        width: 75%;
-    }
-
-    .chat-room .mid-side footer .btn-group {
-        display: none;
-    }
-}
-
-
 
 

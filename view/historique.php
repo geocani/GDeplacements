@@ -1,6 +1,6 @@
 <section id="main-content">
     <section class="wrapper">
-        <div class="container center">
+        <div class="container pd-top">
             <!-- HISTORIQUE -->
             <div class="titre-page">
                 <h2><i class="fa fa-clock-o pad-ico-profil"></i><span >Historique</span><h2>
