@@ -1,7 +1,8 @@
 
 
 .form-frais{
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    padding-bottom: 20px;
 }
 
 .martop{
@@ -86,9 +87,12 @@ header{
     z-index: 1002;
 }
 .header img{
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
     width: 150px;
 }
+
 .app_titre{
     font-weight: 900;
     font-family: 'Open Sans', sans-serif;
@@ -204,18 +208,26 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
     height: 100%;
 }
 #main-content {
-    margin-left: 210px;
+
+    margin-left: 230px;
+    margin-right: 20px;
+    /* background-color: rgb(121, 110, 110); */
+    
 }
 .wrapper {
     display: inline-block;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 0px;
     width: 100%;
 }
+.titre-page{
+    /* background-color: #cacaca; */
+}
 .titre-page h2{
+    padding-top: 30px;
     padding-bottom: 15px;
     text-align: center;
     font-weight: 900;
@@ -248,9 +260,9 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
     -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.404);
 }
-/* .border{
+.border{
     border: none !important;
-} */
+}
 td{
     background-color: rgb(255, 255, 255);
 }
@@ -266,7 +278,50 @@ th{
 /*--------------------------------------------------------------
 3.4 MAIN - NOUVEAU TRAJET
 --------------------------------------------------------------*/
+.wrapper-debug {
+    display: inline-block;
+    margin-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+}
+.cont-creation{
+    /* margin-left: 300px;
+    margin-right: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 100px;
+    box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.521);
+    border-radius: 0.5%;
+}
+.cont-creation h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+}
 
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0;
+    margin-right: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
 /*--------------------------------------------------------------
 4.0 MEDIA QUERIES
 --------------------------------------------------------------*/
