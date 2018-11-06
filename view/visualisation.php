@@ -20,7 +20,7 @@
 <section id="main-content">
     <section class="wrapper-visu">
         <div class="center container">
-            <table class="table table-sm table-striped shad">
+            <table class="table table-rec table-sm table-striped shad table-p">
                 <tbody>
                     <tr>
                         <th colspan="2">

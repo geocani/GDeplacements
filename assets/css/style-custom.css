@@ -15,14 +15,8 @@
     margin-top: 100px;
     color: red;
 }
-.rec{
-    font-size: 20px;
-    text-align: left;
-}
-.str{
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.623);
-}
+
+
 .deb{
     text-align: center; 
     font-size: 18px;
@@ -294,6 +288,22 @@ th{
     padding: 0.5em;
     padding-left: 10px;
     vertical-align: middle ;
+
+}
+/*--------------------------------------------------------------
+3.4 MAIN - RECAPITULATIF
+--------------------------------------------------------------*/
+.rec{
+    font-size: 15px;
+    padding: 0;
+
+}
+.str{
+    font-weight: bold;
+    /* color: rgba(0, 0, 0, 0.623); */
+}
+.table-rec td, .table-rec th {
+
 
 }
 /*--------------------------------------------------------------
