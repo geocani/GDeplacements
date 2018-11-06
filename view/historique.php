@@ -5,7 +5,11 @@
             <div class="titre-page">
                 <h2><i class="fa fa-clock-o pad-ico-profil"></i><span >Historique</span><h2>
             </div>
-                
+            <div class="btn-fix">
+                <a href="creation_trajet.php">
+                    <img src="assets/img/add2.svg" alt="IMG">
+                </a>
+            </div>
             <!---->
             <table class="table table-sm table-bordered table-hover shad">
                 <thead>

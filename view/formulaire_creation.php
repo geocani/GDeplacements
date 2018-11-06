@@ -64,17 +64,13 @@
         }
 }
 ?>
-
-
-
-
 <!--MAIN-->
 <section class="page" id="main-content">
     <section class="wrapper-debug">
         <!-- FORM -->
         <div class="cont-creation">
             <div class="container form-frais">
-                <div class="titre-page">
+                <div class="titre-page-add-trajet">
                     <h2><i class="fa fa fa-car pad-ico-profil"></i><span> CREATION DE TRAJET</span><h2>
                 </div>
                 <form action="" method="POST">

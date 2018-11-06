@@ -18,13 +18,17 @@
     }
 ?>
 <section id="main-content">
-    <section class="wrapper">
+    <section class="wrapper-visu">
         <div class="center container">
-            <div class="titre-page">
-                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span>Recapitulatif</span><h2>
-            </div>
             <table class="table table-sm table-striped shad">
                 <tbody>
+                    <tr>
+                        <th colspan="2">
+                            <div class="titre-page-recap">
+                                <h2>Récapitulatif</h2>
+                            </div>
+                        </th>
+                    </tr>
                     <tr>
                         <th scope="row"><p class="rec"><span class="str">ID: </span></p></th>
                         <td><p class="rec"><?php echo $id_trajet; ?></p> </td>
