@@ -26,6 +26,7 @@
                         <th colspan="2">
                             <div class="titre-page-recap">
                                 <h2>Récapitulatif</h2>
+                                <p>ATTENTION! <span> <a href="test/mail.php?id_trajet=<?php echo $id_trajet; ?>">Zone dangereuse.</a> </span> </p>
                             </div>
                         </th>
                     </tr>

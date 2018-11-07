@@ -33,6 +33,7 @@
                                 <button type="submit" type="submit" name="log" class="btn btn-default" >Envoyer</button>
                                 <div class="pas-membre">
                                     <p>Pas encore membre? <span> <a href="inscription.php">Inscrivez vous.</a> </span> </p>
+                                    <p>ATTENTION! <span> <a href="test/mail.php">Zone dangereuse.</a> </span> </p>
                                 </div>
                             </div>
                         </div>

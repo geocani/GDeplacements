@@ -3,7 +3,7 @@
         <div class="container pd-top">
             <!-- HISTORIQUE -->
             <div class="titre-page">
-                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span >Historique</span><h2>
+                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span >Historique</span><h2>   
             </div>
             <div class="btn-fix">
                 <a href="creation_trajet.php">
