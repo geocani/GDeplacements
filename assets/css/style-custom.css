@@ -129,6 +129,7 @@ header{
 }
 .sidebar p{
     color: #aeb2b7;
+    font-size: 15px;
 }
 .sidebar i{
     font-size:15px;
@@ -145,22 +146,31 @@ ul.sidebar-menu {
 }
 ul.sidebar-menu li ul.sub li{ 
     background: #2f323a;
+    padding-top: 10px;
+    padding-bottom: 5px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+
+}
+.tes{
+    padding-top: 30px;
 }
 ul.sidebar-menu li a{
     color: #aeb2b7;
     text-decoration: none;
     display: block;
-    padding: 15px 0 15px 10px;
-    font-size: 12px;
+    padding: 0;
+    font-size: 15px;
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+.br{
+    padding-top: 10px;
 }
 /* a:hover */
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
@@ -257,6 +267,7 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
     opacity: 0.65;
     margin: auto;
     text-align: center;
+    padding-top: 50px;
 }
 /*--------------------------------------------------------------
 3.2 MAIN - INSCRIPTION

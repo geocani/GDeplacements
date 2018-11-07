@@ -17,12 +17,13 @@
                 <!-- OUTILS-->
                 <li ><h5 class="">OUTILS:</h5></li>
                 <li class="sub-menu">
-                    <a href="" ><i class="fa fa-plus"></i><span>Trajets / Frais</span></a>
-                    <ul class="sub">
-                        <li><a href="historique.php"><i class="fa fa-clock-o"></i>Historique</a></li>
+                    <a a class="col" href="" ><i class="fa fa-plus"></i><span>Trajets / Frais</span></a>
+                    <ul class="sub tes">
+                        <li class="tes"><a  href="historique.php"><i class="fa fa-clock-o"></i>Historique</a></li>
                         <li><a href="creation_trajet.php"><i class="fa fa-car"></i>Nouveau trajet</a></li>
                     </ul>
                 </li>
+                <div class="br"></div>
                 <!-- VALIDATION-->
                 <li class="sub-menu">
                     <a class="" href=""><i class="fa fa-check"></i><span>Validation</span></a>
@@ -30,6 +31,7 @@
                         <li><a href="#"><i class="fa fa-check"></i>Valider un trajet</a></li>
                     </ul>
                 </li>
+                <div class="br"></div>
                 <!-- DECONNEXION -->
                 <li> 
                     <a class="" href="model/deconnexion.php"><i class="fa fa-power-off"></i><span>DECONNEXION</span></a>
