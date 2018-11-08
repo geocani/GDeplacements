@@ -33,13 +33,36 @@
                                 <button type="submit" type="submit" name="log" class="btn btn-default" >Envoyer</button>
                                 <div class="pas-membre">
                                     <p>Pas encore membre? <span> <a href="inscription.php">Inscrivez vous.</a> </span> </p>
-                                    <p>ATTENTION! <span> <a href="test/mail.php">Zone dangereuse.</a> </span> </p>
                                 </div>
                             </div>
                         </div>
                     </form>
                     <div class="raw erreur">
                         <?php if (isset($erreur)){ echo "<p class='erreur'>" . $erreur . "</p>"; }; ?>
+                    </div>
+<!-------------------------------------ALERTE----------------------------------------->
+<div class="test-alert">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BOUTON</button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ATTENTION !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            <div class="modal-body">
+                Etes-vous certain de vouloir supprimer ce trajet?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-primary"><a href="alert.php">OK</a>></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------>
                     </div>
                 </div>
                 <div class="col-sm-4">

@@ -1,61 +1,68 @@
-<section id="main-content">
-    <section class="wrapper">
-        <div class="container pd-top">
-            <!-- HISTORIQUE -->
-            <div class="titre-page">
-                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span >Historique</span><h2>
-            </div>
-            <!---->
-
-
-<div class="row">
-    <div class="col-md-6">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">How to contact you ?</h2>
-                    <div class="form-group">
-                        <label for="email" class="col-form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
-                        <div class="email-feedback"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="tel" class="col-form-label">Phone number</label>
-                        <input type="text" class="form-control" id="tel" placeholder="+33 6 99 99 99 99" required>
-                        <div class="phone-feedback"></div>
-                    </div>
+<section class="page" id="main-content">
+    <section class="wrapper-debug">
+        <!-- FORM -->
+        <div class="cont-creation">
+            <div class="container form-frais">
+                <div class="titre-page-add-trajet">
+                    <h2><i class="fa fa fa-car pad-ico-profil"></i><span> EDITION DU PROFIL</span><h2>
                 </div>
-            </div>
-        </div>
-    <div class="col-md-6">
-        <div class="card"> 
-            <div class="card-body">
-                <h2 class="card-title">Securize your account !</h2>
-                    <div class="form-group">
-                        <label for="password" class="col-form-label">Pasword</label>
-                        <input type="password" class="form-control" id="password" placeholder="Type your password" required>
-                        <div class="password-feedback"></div>
+                <form action="" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Mon label">Label</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                    <label class="custom-file-label" for="inputGroupFile01">Choisissez une image</label>
+                                </div>
+                            </div>
+                            <label for="edit-nom">Nom:</label>
+                            <input type="text" name="edit-nom" class="form-control" id="edit-nom" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                            <label for="edit-prenomt">Prénom:</label>
+                            <input type="text" name="edit-prenom" class="form-control" id="edit-prenom" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                            <label for="edit-nom">E-mail:</label>
+                            <input type="email" name="edit-email" class="form-control" id="edit-email" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                            <label for="edit-login">Login:</label>
+                            <input type="text" name="edit-login" class="form-control" id="edit-login" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="edit-nom">Nom:</label>
+                            <input type="text" name="edit-nom" class="form-control" id="edit-nom" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                            <label for="edit-prenomt">Prénom:</label>
+                            <input type="text" name="edit-prenom" class="form-control" id="edit-prenom" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                            <label for="edit-nom">E-mail:</label>
+                            <input type="email" name="edit-email" class="form-control" id="edit-email" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                            <label for="edit-login">Login:</label>
+                            <input type="text" name="edit-login" class="form-control" id="edit-login" placeholder="" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
+                            <div class="erreur">
+                                <?php if(isset($erreur)){echo $erreur;}?>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="password_conf" class="col-form-label">Pasword (confirm)</label>
-                        <input type="password" class="form-control" id="password_conf" placeholder="Type your password again" required>
-                        <div class="password_conf-feedback"></div>
-                    </div>
-                </div>
+                </form>
             </div>
-        </div>
-    </div>
-    <div>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Sign up !</button>
-    </div>
-</form>
-
-
-
-
-
-<!---->
         </div>
     </section>
 </section>
-<form>
         

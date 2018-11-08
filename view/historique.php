@@ -43,9 +43,33 @@
                             <a href="fpdf/impression.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class="hidden-phone"> <button class="btn btn-outline-primary border" data-toggle="tooltip" data-placement="top" title="Impression du trajet"><i class="fa fa-print "></i></button></a>
                             <a href="modification_trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class="hidden-phone"><button class="btn btn-outline-info border" data-toggle="tooltip" data-placement="top" title="Modification du trajet"><i class="fa fa-pencil"></i></button></a>
                             <a href="model/suppression-trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class=""><button class="btn btn-outline-danger border" data-toggle="tooltip" data-placement="top" title="Suppression du trajet"><i class="fa fa-trash-o "></i></button></a>
+                            <!-- <a href="#" class=""><button class="btn btn-outline-danger border" data-toggle="modal" data-target="#AlertSupp" title="Suppression du trajet"><i class="fa fa-trash-o "></i></button></a> -->
                             <a href="#" class="hidden-phone"><button class="btn btn-outline-warning border" data-toggle="tooltip" data-placement="top" title="Soumettre le trajet à la validation"><i class="fa fa-share "></i></button></a>
                         </td>
                     </tr>
+<!-------------------------------------ALERTE----------------------------------------->
+<div class="test-alert">
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AlertSupp">BOUTON</button> -->
+    <!-- Modal -->
+    <div class="modal fade" id="AlertSupp" tabindex="-1" role="dialog" aria-labelledby="AlertSuppLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="AlertSuppLabel">ATTENTION !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+            <div class="modal-body">
+                Etes-vous certain de vouloir supprimer ce trajet? <?php ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-danger"><a href="model/suppression-trajet.php?id_trajet=<?php echo $trajet['id_trajet']; ?>">OK</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------>
                     <?php
                     } // FIN BOUCLE
                         } else {
