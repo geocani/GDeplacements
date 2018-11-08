@@ -20,67 +20,63 @@
 <section id="main-content">
     <section class="wrapper-visu">
         <div class="center container">
-            <table class="table table-rec table-sm table-striped shad table-p">
+        <div class="titre-page-recap">
+            <h2>Récapitulatif</h2>
+            <p>ATTENTION! <span> <a href="test/mail.php?id_trajet=<?php echo $id_trajet; ?>">Zone dangereuse.</a> </span> </p>
+        </div>
+            <table class="table table-striped shad">
                 <tbody>
                     <tr>
-                        <th colspan="2">
-                            <div class="titre-page-recap">
-                                <h2>Récapitulatif</h2>
-                                <p>ATTENTION! <span> <a href="test/mail.php?id_trajet=<?php echo $id_trajet; ?>">Zone dangereuse.</a> </span> </p>
-                            </div>
-                        </th>
+                        <td class="strip-recap bold">ID-Trajet:</td>
+                        <td class="strip-recap"><?php echo $id_trajet; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">ID: </span></p></th>
-                        <td><p class="rec"><?php echo $id_trajet; ?></p> </td>
+                        <td class="bold">Status:</td>
+                        <td><?php echo $status_trajet; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Status: </span></p></th>
-                        <td><p class="rec"><?php echo $status_trajet; ?></p> </td>
+                        <td class="strip-recap bold">Date:</td>
+                        <td class="strip-recap"><?php echo $date_trajet; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Date: </span></p></th>
-                        <td><p class="rec"><?php echo $date_trajet; ?></p> </td>
+                        <td class="bold">Départ administratif:</td>
+                        <td><?php echo $heure_administrative; ?></td>
+                    </tr>
+                    <tr class="no-bord">
+                        <td class="bold no-bord">Départ domicile:</td>
+                        <td class=""><?php echo $heure_domicile; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Départ administratif: </span></p></th>
-                        <td><p class="rec"><?php echo $heure_administrative; ?></p></td>
+                        <td class="strip-recap bold">Commune visitée:</td>
+                        <td class="strip-recap"><?php echo $nom_commune; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Départ domicile: </span></p></th>
-                        <td><p class="rec"><?php echo $heure_domicile; ?></p></td>
+                        <td class="bold">Heure d'arrivés:</td>
+                        <td><?php echo $heure_arrivee; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Commune visitée: </span></p></th>
-                        <td><p class="rec"><?php echo $nom_commune; ?></p></td>
-                    </tr>
-                        <tr>
-                        <th scope="row"><p class="rec"><span class="str">heure d'arrivée: </span></p></th>
-                    <td><p class="rec"><?php echo $heure_arrivee; ?></p></td>
+                        <td class="strip-recap bold">Heure de départ:</td>
+                        <td class="strip-recap"><?php echo $heure_depart; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">heure de départ: </span></p></th>
-                        <td><p class="rec"><?php echo $heure_depart; ?></p></td>
+                        <td class="bold">Fin de mission:</td>
+                        <td><?php echo $fin_mission; ?></td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Fin de mission: </span></p></th>
-                        <td><p class="rec"><?php echo $fin_mission; ?></p></td>
+                        <td class="strip-recap bold">Km dans aglomération:</td>
+                        <td class="strip-recap"><?php echo $km_aglomeration; ?> Km</td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Km dans aglomération: </span></p></th>
-                        <td><p class="rec"><?php echo $km_aglomeration; ?> Km</p></td>
+                        <td class="bold">Km hors aglomération:</td>
+                        <td><?php echo $km_hors; ?> km</td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Km hors aglomération: </span></p></th>
-                        <td><p class="rec"><?php echo $km_hors; ?> km</p></td>
+                        <td class="strip-recap bold">Transport:</td>
+                        <td class="strip-recap"><?php echo $transport; ?> €</td>
                     </tr>
                     <tr>
-                        <th scope="row"><p class="rec"><span class="str">Transport: </span></p></th>
-                        <td><p class="rec"><?php echo $transport; ?> €</p></td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><p class="rec"><span class="str">Motif: </span></p></th>
-                        <td><p class="rec"><?php echo $motif; ?></p></td>
+                        <td class="bold">Motif:</td>
+                        <td><?php echo $motif; ?></td>
                     </tr>
                 </tbody>
             </table>

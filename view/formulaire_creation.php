@@ -79,21 +79,21 @@
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="date-trajet">Date:</label>
-                            <input type="date" name="date-trajet" class="form-control" id="date-trajet" placeholder="Heure">
+                            <input type="date" name="date-trajet" class="form-control" id="date-trajet" placeholder="Heure" value="<?php if(isset($date_trajet)) { echo $date_trajet;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur)){echo $erreur;}?>
                             </div>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="heure-administrative">Départ résidence administrative:</label>
-                            <input type="time" name="heure-administrative" class="form-control" id="heure-administrative" placeholder="résidence administrative">
+                            <input type="time" name="heure-administrative" class="form-control" id="heure-administrative" placeholder="résidence administrative" value="<?php if(isset($heure_administrative)) { echo $heure_administrative;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_heure)){echo $erreur_heure;}?>
                             </div>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="heure-domicile">Départ domicile:</label>
-                            <input type="time" name="heure-domicile" class="form-control" id="heure-domicile" placeholder="Domicile">
+                            <input type="time" name="heure-domicile" class="form-control" id="heure-domicile" placeholder="Domicile" value="<?php if(isset($heure_domicile)) { echo $heure_domicile;} ?>">
                         </div>
                     </div>
                     <!--Commune visitée-->
@@ -101,28 +101,28 @@
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="nom-commune">Nom:</label>
-                            <input type="text" name="nom-commune" class="form-control" id="nom-commune" placeholder="Ex: Namur">
+                            <input type="text" name="nom-commune" class="form-control" id="nom-commune" placeholder="Ex: Namur" value="<?php if(isset($nom_commune)) { echo $nom_commune;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_commune)){echo $erreur_commune;}?>
                             </div>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="heure-arrivee">Heure d'arrivée:</label>
-                            <input type="time" name="heure-arrivee" class="form-control" id="heure-arrivee" placeholder="">
+                            <input type="time" name="heure-arrivee" class="form-control" id="heure-arrivee" placeholder="" value="<?php if(isset($heure_arrivee)) { echo $heure_arrivee;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_arrivee)){echo $erreur_arrivee;}?>
                             </div>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="heure-depart">Heure de retour:</label>
-                            <input type="time" name="heure-depart" class="form-control" id="heure-depart" placeholder="">
+                            <input type="time" name="heure-depart" class="form-control" id="heure-depart" placeholder="" value="<?php if(isset($heure_depart)) { echo $heure_depart;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_depart)){echo $erreur_depart;}?>
                             </div>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="fin-mission">Heure de fin de mission:</label>
-                            <input type="time" name="fin-mission" class="form-control" id="fin-mission" placeholder="">
+                            <input type="time" name="fin-mission" class="form-control" id="fin-mission" placeholder="" value="<?php if(isset($fin_mission)) { echo $fin_mission;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_mission)){echo $erreur_mission;}?>
                             </div>
@@ -133,21 +133,21 @@
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="km-aglomeration">Dans l'agomération:</label>
-                            <input type="number" name="km-aglomeration" class="form-control" id="km-aglomeration" placeholder="Ex: 10" step="0.01">
+                            <input type="number" name="km-aglomeration" class="form-control" id="km-aglomeration" placeholder="Ex: 10" step="0.01" value="<?php if(isset($km_aglomeration)) { echo $km_aglomeration;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_aglo)){echo $erreur_aglo;}?>
                             </div>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="km-hors">Hors aglomération:</label>
-                            <input type="number" name="km-hors" class="form-control" id="km-hors" placeholder="Ex: 10" step="0.01">
+                            <input type="number" name="km-hors" class="form-control" id="km-hors" placeholder="Ex: 10" step="0.01" value="<?php if(isset($km_hors)) { echo $km_hors;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_hors)){echo $erreur_hors;}?>
                             </div>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="transport">Transport en commun:</label>
-                            <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2,50" step="0.01" Value="0">
+                            <input type="number" name="transport" class="form-control" id="transport" placeholder="Ex: 2,50" step="0.01" value="<?php if(isset($transport)) { echo $transport;} ?>">
                             <div class="erreur">
                                 <?php if(isset($erreur_transport)){echo $erreur_transport;}?>
                             </div>
@@ -173,7 +173,7 @@
                     <!--Motif-->
                     <div class="form-group">
                         <label for="motif">Motif:</label>
-                        <textarea class="form-control" name="motif" id="motif" rows="3"></textarea>
+                        <textarea class="form-control" name="motif" id="motif" rows="3" value="<?php if(isset($motif)) { echo $motif;} ?>"></textarea>
                         <div class="erreur">
                             <?php if(isset($erreur_motif)){echo $erreur_motif;}?>
                         </div>
