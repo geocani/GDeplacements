@@ -30,9 +30,9 @@
                         </div>
                         <div class="form-group"> 
                             <div class="col-sm-offset-2">
-                                <button type="submit" type="submit" name="log" class="btn btn-default" >Envoyer</button>
+                                <button type="submit" type="submit" name="log" class="btn btn-style" >Envoyer</button>
                                 <div class="pas-membre">
-                                    <p>Pas encore membre? <span> <a href="inscription.php">Inscrivez vous.</a> </span> </p>
+                                    <p>Pas encore membre? <span> <a class="str-link" href="inscription.php">Inscrivez vous.</a> </span> </p>
                                 </div>
                             </div>
                         </div>
@@ -41,11 +41,11 @@
                         <?php if (isset($erreur)){ echo "<p class='erreur'>" . $erreur . "</p>"; }; ?>
                     </div>
 <!-------------------------------------ALERTE----------------------------------------->
-<div class="test-alert">
+<!-- <div class="test-alert"> -->
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BOUTON</button>
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">BOUTON</button> -->
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -60,8 +60,8 @@
                 <button type="button" class="btn btn-primary"><a href="alert.php">OK</a>></button>
             </div>
         </div>
-    </div>
-</div>
+    </div> -->
+<!-- </div> -->
 <!------------------------------------------------------------------------------------>
                     </div>
                 </div>

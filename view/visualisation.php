@@ -21,8 +21,8 @@
     <section class="wrapper-visu">
         <div class="center container">
         <div class="titre-page-recap">
-            <h2>Récapitulatif</h2>
-            <p>ATTENTION! <span> <a href="test/mail.php?id_trajet=<?php echo $id_trajet; ?>">Zone dangereuse.</a> </span> </p>
+            <h2><i class="fa fa-clock-o pad-ico-profil"></i><span > Récapitulatif du 11/12/2018</span><h2>
+            <!-- <p>ATTENTION! <span> <a href="test/mail.php?id_trajet=<?php echo $id_trajet; ?>">Zone dangereuse.</a> </span> </p> -->
         </div>
             <table class="table table-striped shad">
                 <tbody>
@@ -80,9 +80,9 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-primary">Retour</button></a>
-            <a href="modification_trajet.php?id_trajet=<?php echo $id_trajet; ?>"><button type="button" class="btn btn-primary">Modifier</button></a>  
-            <a class="hidden-phone" href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-primary">Imprimer</button></a>
+            <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-style">Retour</button></a>
+            <a href="modification_trajet.php?id_trajet=<?php echo $id_trajet; ?>"><button type="button" class="btn btn-style">Modifier</button></a>  
+            <a class="hidden-phone" href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-style">Imprimer</button></a>
         </div>
     </section>
 </section>

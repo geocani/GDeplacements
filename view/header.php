@@ -5,12 +5,13 @@
                 <img src="assets/img/logo1.svg" alt="Logo">
             </li>
         </ul>
-        <ul class="app_titre">
+        <!-- <ul class="app_titre">
             <li>
-                <!-- <h2>FRAIS DE DEPLACEMENT ET DE SEJOUR</h2> -->
+                <h2>FRAIS DE DEPLACEMENT ET DE SEJOUR</h2>
             </li>
-        </ul>
+        </ul> -->
         <ul class="nav pull-right top-menu">
+            <!-- <li class="droite-header">Message non lu -- Bienvenue Utilisateur! (Mon compte) - Deconnexion</li> -->
             <li>
                 <div class="sidebar-toggle-box">
                     <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation">

@@ -2,9 +2,10 @@
     <section class="wrapper">
         <div class="container pd-top">
             <!-- HISTORIQUE -->
-            <div class="titre-page">
-                <h2><i class="fa fa-clock-o pad-ico-profil"></i><span >Historique</span><h2>   
-            </div>
+            <div class="titre-page-recap">
+            <h2><i class="fa fa-clock-o pad-ico-profil"></i><span > Historique</span><h2>
+            <!-- <p>ATTENTION! <span> <a href="test/mail.php?id_trajet=<?php echo $id_trajet; ?>">Zone dangereuse.</a> </span> </p> -->
+        </div>
             <div class="btn-fix">
                 <a href="creation_trajet.php">
                     <img src="assets/img/add2.svg" alt="IMG">

@@ -33,6 +33,29 @@ input[type='file']{
     margin: 0;
 
 }
+.droite-header{
+    border: none;
+    color: red;
+    padding-bottom: 20px;
+}
+.btn-style{
+    border: none;
+    background-color: #384f64;
+    color: white;
+}
+
+/* .btn-style:hover{
+    background-color: rgb(15, 52, 79);
+    border: none;
+} */
+.str-link{
+    color: #384f64;
+    font-weight: 600;
+}
+.str-link:hover{
+    color: rgb(15, 52, 79);
+    font-weight: 600;
+}
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -116,6 +139,7 @@ header{
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
+    color: white;
 }
 .sidebar-closed > #sidebar > ul {
     display: none;
@@ -268,6 +292,8 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
     padding-bottom: 20px;
     text-align: center;
     font-weight: 900;
+    color: #384f64;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.476);
 }
 /*--------------------------------------------------------------
 3.1 MAIN - LOGIN
@@ -391,7 +417,8 @@ tr.no-bord td{
 @media (min-width: 768px) {
 
     .sidebar-toggle-box{
-        display: none;
+        /* padding-bottom: 20px; */
+        /* display: none; */
     }
     .btn-fix{
         display: none;
