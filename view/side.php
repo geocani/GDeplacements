@@ -1,5 +1,5 @@
 <aside>
-    <div id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar shad">
         <ul class="sidebar-menu" id="nav-accordion">
             <li>
                 <div class="avatar">
@@ -34,7 +34,7 @@
                 <div class="br"></div>
                 <!-- DECONNEXION -->
                 <li> 
-                    <a class="" href="model/deconnexion.php"><i class="fa fa-power-off"></i><span>DECONNEXION</span></a>
+                    <a class="" href="model/deconnexion.php"><i class="fa fa-power-off"></i><span>Deconnexion</span></a>
                 </li>
             </div>
         </ul>
