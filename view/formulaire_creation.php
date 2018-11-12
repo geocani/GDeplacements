@@ -67,15 +67,16 @@
 <!--MAIN-->
 <section class="page" id="main-content">
     <section class="wrapper-debug">
+        <div class="titre-page-edit-profil">
+            <h2><i class="fa fa-car pad-ico-profil"></i> Nouveau trajet</h2>
+            <br>
+        </div>
         <!-- FORM -->
         <div class="cont-creation">
             <div class="container form-frais">
-                <div class="titre-page-add-trajet">
-                    <h2><i class="fa fa fa-car pad-ico-profil"></i><span> CREATION DE TRAJET</span><h2>
-                </div>
                 <form action="" method="POST">
                     <!--Date et heure de départ-->
-                    <h4 class="">Date et heure de départ.</h4>
+                    <!-- <h4 class="">Date et heure de départ.</h4> -->
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="date-trajet">Date:</label>
@@ -97,7 +98,7 @@
                         </div>
                     </div>
                     <!--Commune visitée-->
-                    <h4>Commune visitée.</h4>
+                    <!-- <h4>Commune visitée.</h4> -->
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="nom-commune">Nom:</label>
@@ -129,7 +130,7 @@
                         </div>
                     </div>
                     <!--KM parcourus-->
-                    <h4>Kilomètres parcourus.</h4>
+                    <!-- <h4>Kilomètres parcourus.</h4> -->
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="km-aglomeration">Dans l'agomération:</label>
@@ -194,7 +195,7 @@
                             <?php if(isset($erreur_cert)){echo $erreur_cert;}?>
                         </div>
                     </div>
-                    <input type="submit" class="btn btn-primary" name="send-trajet" value="Envoyer le formulaire">
+                    <button type="submit" class="btn btn-style" name="send-trajet">Envoyer le formulaire</button>
                 </form>
             </div>
         </div>
