@@ -20,11 +20,11 @@
 <section id="main-content">
     <section class="wrapper-visu">
         <div class="center container">
-        <div class="titre-page-recap">
-            <h2><i class="fa fa-clock-o pad-ico-profil"></i><span > Récapitulatif du 11/12/2018</span><h2>
-            <!-- <p>ATTENTION! <span> <a href="test/mail.php?id_trajet=<?php echo $id_trajet; ?>">Zone dangereuse.</a> </span> </p> -->
+        <div class="cont-recap">
+        <div class="tete">
+            <h2><i class="fa fa-car pad-ico-profil"></i> Trajet du <?php echo $date_trajet; ?></h2>
         </div>
-            <table class="table table-striped shad">
+            <table class="table table-striped table-recap">
                 <tbody>
                     <tr>
                         <td class="strip-recap bold">ID-Trajet:</td>
@@ -82,7 +82,8 @@
             </table>
             <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-style">Retour</button></a>
             <a href="modification_trajet.php?id_trajet=<?php echo $id_trajet; ?>"><button type="button" class="btn btn-style">Modifier</button></a>  
-            <a class="hidden-phone" href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-style">Imprimer</button></a>
+            <a class="hidden-phone" href="fpdf/impression.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button type="button" class="btn btn-style">Imprimer</button></a>
+            <a href="fpdf/impression.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class="hidden-phone"> <button class="btn btn-outline-primary border" data-toggle="tooltip" data-placement="top" title="Impression du trajet"><i class="fa fa-print "></i></button></a>
         </div>
     </section>
 </section>

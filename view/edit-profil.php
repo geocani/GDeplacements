@@ -1,11 +1,10 @@
 <section class="page" id="main-content">
     <section class="wrapper-debug">
         <!-- FORM -->
-        <div class="titre-page-edit-profil">
-            <h2><i class="fa fa-clock-o pad-ico-profil"></i> Edition de votre profil</h2>
-            <br>
-        </div>
         <div class="cont-edition-profil">
+        <div class="tete">
+            <h2><i class="fa fa-clock-o pad-ico-profil"></i> Edition de votre profil</h2>
+        </div>
             <div class="pic-edition">
                 <img class="img_avatar" src="assets/img/avatar.svg" alt="AVATAR">
             </div>
