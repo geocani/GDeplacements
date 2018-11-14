@@ -20,7 +20,6 @@
     <?php
         // INCLUDE
         include 'model/bdd.php';
-        include 'model/log.php';
         include 'view/header.php';
         include 'view/side.php';
         include 'view/edit-profil.php';

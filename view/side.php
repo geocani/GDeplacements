@@ -13,7 +13,7 @@
                 <li ><h5>PROFIL:</h5></li>
                 <li><p><i class="fa fa-briefcase"></i><?php if (isset($_SESSION['service'])){ echo $_SESSION['service']; }else{ echo "-- --"; } ?></p></li>
                 <li><p><i class="fa fa-drivers-license"></i><?php if (isset($_SESSION['grade'])){ echo $_SESSION['grade']; }else{ echo "-- --"; } ?></p></li>
-                <li><a href="edition-profil.php"><p><i class="fa fa-gear"></i>Plus...</p></a></li>
+                <li><a href="edition-profil.php?id_agent=<?php echo $_SESSION['id_agent']; ?>"><p><i class="fa fa-gear"></i>Plus...</p></a></li>
                 <!-- OUTILS-->
                 <li ><h5 class="">OUTILS:</h5></li>
                 <li class="sub-menu">

@@ -1,3 +1,22 @@
+.table-recap{
+    /* margin: 20px 20px 20px 20px; */
+}
+.tete{
+    background-color: #384f64;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.tete h2{
+    padding-top: 8px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
 .label-edition{
     margin-bottom: .1rem;
 }
@@ -12,7 +31,15 @@
 }
 .form-frais{
     /* margin-top: 100px; */
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.form-nouveau-trajet{
+    /* margin-top: 100px; */
     padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .martop{
@@ -294,7 +321,7 @@ ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
 }
 .wrapper-visu {
     display: inline-block;
-    margin-top: 80px;
+    
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -379,6 +406,7 @@ th{
     padding: 0.5em;
     padding-left: 10px;
     vertical-align: middle ;
+    
 
 }
 /*--------------------------------------------------------------
@@ -417,9 +445,7 @@ tr.no-bord td{
     padding-top: 0px;
     width: 100%;
 }
-.cont-creation{
-    /* margin-left: 300px;
-    margin-right: 20px; */
+/* .cont-creation{
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -428,6 +454,30 @@ tr.no-bord td{
     margin-bottom: 10px;
     box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.521);
     border-radius: 0.5%;
+} */
+.cont-creation{
+    /* margin-left: 300px;
+    margin-right: 20px; */
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
+}
+.cont-recap{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 80px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
 }
 .cont-creation h4{
     font-family: 'Open Sans', sans-serif;
@@ -436,10 +486,10 @@ tr.no-bord td{
 .cont-edition-profil{
     /* margin-left: 300px;
     margin-right: 20px; */
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     background-color: rgb(255, 255, 255);
-    margin-top: 0px;
+    margin-top: 80px;
     box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.521);
     border-radius: 0.5%;
 }

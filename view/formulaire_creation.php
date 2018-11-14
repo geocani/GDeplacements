@@ -67,16 +67,15 @@
 <!--MAIN-->
 <section class="page" id="main-content">
     <section class="wrapper-debug">
-        <div class="titre-page-edit-profil">
-            <h2><i class="fa fa-car pad-ico-profil"></i> Nouveau trajet</h2>
-            <br>
-        </div>
         <!-- FORM -->
         <div class="cont-creation">
-            <div class="container form-frais">
+        <div class="tete">
+            <h2><i class="fa fa-car pad-ico-profil"></i> Nouveau trajet</h2>
+        </div>
+            <div class="container form-nouveau-trajet">
                 <form action="" method="POST">
                     <!--Date et heure de départ-->
-                    <!-- <h4 class="">Date et heure de départ.</h4> -->
+                    <h4>Date et heure de départ.</h4>
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="date-trajet">Date:</label>
@@ -98,7 +97,7 @@
                         </div>
                     </div>
                     <!--Commune visitée-->
-                    <!-- <h4>Commune visitée.</h4> -->
+                    <h4>Commune visitée.</h4>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="nom-commune">Nom:</label>
@@ -130,7 +129,7 @@
                         </div>
                     </div>
                     <!--KM parcourus-->
-                    <!-- <h4>Kilomètres parcourus.</h4> -->
+                    <h4>Kilomètres parcourus.</h4>
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="km-aglomeration">Dans l'agomération:</label>
