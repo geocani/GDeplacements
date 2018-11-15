@@ -213,8 +213,8 @@
                             <?php if(isset($erreur_cert)){echo $erreur_cert;}?>
                         </div>
                     </div>
-                    <input type="submit" class="btn btn-primary" name="modif-trajet" value="Modifier le formulaire">
-                    <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-primary">Anuler</button></a>
+                    <input type="submit" class="btn btn-style" name="modif-trajet" value="Modifier le formulaire">
+                    <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-style">Anuler</button></a>
                 </form>
             </div>
         </div>

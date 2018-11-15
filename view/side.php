@@ -1,8 +1,17 @@
+<?php
+include 'model/log.php';
+?>
 <aside>
     <div id="sidebar" class="sidebar shad">
         <ul class="sidebar-menu" id="nav-accordion">
             <li>
                 <div class="avatar">
+                <?php
+                    if(isset($agent_info['id_agent'])){
+                        echo $agent_info['id_agent'];
+                    }
+                    
+                ?>
                     <img class="img_avatar" src="assets/img/avatar.svg" alt="AVATAR">
                     <h5>
                         <?php if (isset($_SESSION['prenom'])){ echo $_SESSION['prenom']." ". $_SESSION["nom"]; }else{ echo "-- --"; } ?>

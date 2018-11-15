@@ -65,6 +65,10 @@
     margin-top: 10px;
     text-align: center;
 }
+.pas-membre p{
+    color: #6d6c6c;
+    text-shadow: 1px 1px #efefef;
+}
 input[type='file']{
     padding: 0;
     margin: 0;
@@ -80,6 +84,7 @@ input[type='file']{
     background-color: #384f64;
     color: white;
     height: calc(2.25rem + 2px);
+    padding-left: 5px;
 }
 .btn-style-edit{
     margin-top: 21px;
@@ -505,10 +510,9 @@ tr.no-bord td{
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    padding: 0;
     margin-right: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
     font-size: 1rem;
     line-height: 1.5;
     border-radius: .25rem;
