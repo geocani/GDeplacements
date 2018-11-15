@@ -1,18 +1,31 @@
 <?php
-include 'model/log.php';
+    $affiche_agent = $bdd->prepare('SELECT * FROM agents WHERE id_agent = ?');
+    $affiche_agent->execute(array($_SESSION['id_agent']));
+    while ($agent = $affiche_agent->fetch()){
+        $id = $agent['id_agent'];
+        $avatar = $agent['avatar'];
+        $nom = $agent['nom'];
+        $prenom = $agent['prenom'];
+        $email = $agent['email'];
+        $service = $agent['service'];
+        $grade = $agent['grade'];
+        $immatriculation = $agent['immatriculation'];
+        $login = $agent['login'];
+        $mdp = $agent['mdp'];
+    }
 ?>
 <aside>
     <div id="sidebar" class="sidebar shad">
         <ul class="sidebar-menu" id="nav-accordion">
             <li>
                 <div class="avatar">
-                <?php
-                    if(isset($agent_info['id_agent'])){
-                        echo $agent_info['id_agent'];
-                    }
-                    
-                ?>
-                    <img class="img_avatar" src="assets/img/avatar.svg" alt="AVATAR">
+                    <?php 
+                        if (empty($avatar)){
+                            echo "<img class='img_avatar' src='assets/img/membres/avatar/avatar.svg' alt='AVATAR'>";
+                        }else{
+                            echo "<img class='img_avatar' src='assets/img/membres/avatar/".$avatar."' alt='AVATAR'>" ;
+                        }
+                    ?>
                     <h5>
                         <?php if (isset($_SESSION['prenom'])){ echo $_SESSION['prenom']." ". $_SESSION["nom"]; }else{ echo "-- --"; } ?>
                     </h5>

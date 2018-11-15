@@ -4,6 +4,7 @@
     $affiche_agent->execute(array($_SESSION['id_agent']));
     while ($agent = $affiche_agent->fetch()){
         $id = $agent['id_agent'];
+        $avatar = $agent['avatar'];
         $nom = $agent['nom'];
         $prenom = $agent['prenom'];
         $email = $agent['email'];
@@ -15,6 +16,7 @@
     }
 
     if (isset($_POST['edit-profil'])){
+
         // Edit AVATAR
         if (isset($_FILES['avatar']) AND !empty($_FILES['avatar']['name'])){
             $taille_max = 2097152; //Mo
@@ -24,7 +26,7 @@
                 // VERIF extention - strtolower->tout en minuscule substr-> ignorer str aant point strrchr->prendre str apres le point
                 $extention_upload = strtolower(substr(strrchr($_FILES['avatar']['name'], '.'), 1));
                     if(in_array($extention_upload, $extention_valide)){ // in_array->si dans un tableau
-                        $chemin = "membres/avatar/".$_SESSION['id_agent'].".".$extention_upload;
+                        $chemin = "assets/img/membres/avatar/".$_SESSION['id_agent'].".".$extention_upload;
                         $resultat = move_uploaded_file($_FILES['avatar']['tmp_name'], $chemin); // Deplave fichier
                             if($resultat){ // si move_uploaded_file ok
                                 $updateavatar = $bdd->prepare('UPDATE agents SET avatar = :avatar WHERE id_agent = :id');
@@ -42,7 +44,6 @@
                 $erreur = "l'imge ne doit pas depasser 2Mo";
             }
         }
-
         // Edit NOM
         if(isset($_POST["edit-nom"])){
             $newnom = $_POST["edit-nom"];
@@ -113,7 +114,13 @@
             <h2><i class="fa fa-pencil pad-ico-profil"></i> Edition de votre profil</h2>
         </div>
             <div class="pic-edition">
-                <img class="img_avatar" src="assets/img/avatar.svg" alt="AVATAR">
+                <?php 
+                    if (empty($avatar)){
+                        echo "<img class='img_avatar' src='assets/img/membres/avatar/avatar.svg' alt='AVATAR'>";
+                    }else{
+                        echo "<img class='img_avatar' src='assets/img/membres/avatar/".$avatar."' alt='AVATAR'>" ;
+                    }
+                ?>
             </div>
             <div class="container form-frais">
                 <form action="" method="POST" enctype="multipart/form-data"> <!-- enctype="multipart/form-data" -- Permet l'encodage pour tout type de navigateur -->
