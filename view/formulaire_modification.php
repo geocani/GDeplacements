@@ -23,61 +23,61 @@
         if(isset($_POST["modif-date-trajet"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET date_trajet = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-date-trajet'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF HEURE ADMINISTRATIVE
         if(isset($_POST["modif-heure-administrative"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET heure_administrative = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-heure-administrative'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF HEURE DOMICILE
         if(isset($_POST["modif-heure-domicile"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET heure_domicile = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-heure-domicile'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF NOM COMMUNE
         if(isset($_POST["modif-heure-domicile"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET nom_commune = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-nom-commune'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF NOM ARRIVEE
         if(isset($_POST["modif-heure-arrivee"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET heure_arrivee = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-heure-arrivee'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF NOM DEPART
         if(isset($_POST["modif-heure-depart"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET heure_depart = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-heure-depart'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF FIN MISSION
         if(isset($_POST["modif-fin-mission"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET fin_mission = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-fin-mission'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF KM AGLOMERATION
         if(isset($_POST["modif-km-aglomeration"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET km_aglomeration = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-km-aglomeration'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF KM HORS
         if(isset($_POST["modif-km-hors"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET km_hors = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-km-hors'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // MODIF MOTIF
         if(isset($_POST["modif-motif"])){
             $modif_trajet = $bdd->prepare("UPDATE trajets SET motif = ? WHERE id_trajet = ? ");
             $modif_trajet->execute(array($_POST['modif-motif'], $id_trajet));
-            header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
     }   
 ?>
@@ -206,7 +206,7 @@
                             </p>
                             <p>
                                 <input class="form-check-input" name="cert2" type="checkbox" id="certif2">
-                                <label class="form-check-label" for="certif2">J'affirme sur l'honneur que cette déclaration est sincère et complète à la somme de quarante et un euro, dix-huit cents.</label>
+                                <label class="form-check-label" for="certif2">Jjjjjjj'affirme sur l'honneur que cette déclaration est sincère et complète à la somme de quarante et un euro, dix-huit cents.</label>
                             </p>
                         </div>
                         <div class="erreur">

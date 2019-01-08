@@ -32,7 +32,7 @@
                             <div class="col-sm-offset-2">
                                 <button type="submit" type="submit" name="log" class="btn btn-style" >Envoyer</button>
                                 <div class="pas-membre">
-                                    <p>Pas encore membre? <span> <a class="str-link" href="inscription.php">Inscrivez vous.</a> </span> </p>
+                                    <p>Ceci est une version d'évaluation, utilisez le login <span> <a class="str-link">login</a> </span> et le pass <span> <a class="str-link">12345</a> </span>  </p>
                                 </div>
                             </div>
                         </div>

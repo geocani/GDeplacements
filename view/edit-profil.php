@@ -49,57 +49,45 @@
             $newnom = $_POST["edit-nom"];
             $modif_agent = $bdd->prepare("UPDATE agents SET nom = ? WHERE id_agent = ? ");
             $modif_agent->execute(array($newnom, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // Edit PRENOM
         if(isset($_POST["edit-prenom"])){
             $newprenom = $_POST["edit-prenom"];
             $modif_agent = $bdd->prepare("UPDATE agents SET prenom = ? WHERE id_agent = ? ");
             $modif_agent->execute(array($newprenom, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // Edit EMAIL
         if(isset($_POST["edit-mail"])){
             $newmail = $_POST["edit-mail"];
             $modif_agent = $bdd->prepare("UPDATE agents SET email = ? WHERE id_agent = ? ");
             $modif_agent->execute(array($newmail, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // Edit SERVICE
         if(isset($_POST["edit-service"])){
             $newservice = $_POST["edit-service"];
             $modif_agent = $bdd->prepare("UPDATE agents SET service = ? WHERE id_agent = ? ");
             $modif_agent->execute(array($newservice, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // Edit GRADE
         if(isset($_POST["edit-grade"])){
             $newgrade = $_POST["edit-grade"];
             $modif_agent = $bdd->prepare("UPDATE agents SET grade = ? WHERE id_agent = ? ");
             $modif_agent->execute(array($newgrade, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
         // Edit IMMATRICULATION
         if(isset($_POST["edit-immatriculation"])){
             $newimmatriculation = $_POST["edit-immatriculation"];
             $modif_agent = $bdd->prepare("UPDATE agents SET immatriculation = ? WHERE id_agent = ? ");
             $modif_agent->execute(array($newimmatriculation, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
+            echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
         }
-        // Edit LOGIN
-        if(isset($_POST["edit-login"])){
-            $newlogin = $_POST["edit-login"];
-            $modif_agent = $bdd->prepare("UPDATE agents SET login = ? WHERE id_agent = ? ");
-            $modif_agent->execute(array($newlogin, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
-        }
-        // Edit MOT DE PASSE
-        if(isset($_POST["edit-mdp"]) != ""){
-            $newmdp = $_POST["edit-mdp"];
-            $modif_agent = $bdd->prepare("UPDATE agents SET mdp = ? WHERE id_agent = ? ");
-            $modif_agent->execute(array($newmdp, $_SESSION['id_agent']));
-            // header("location: historique.php?id=".$_SESSION['id_agent']);
-        }
+
+
     }
 ?>
 
@@ -144,12 +132,12 @@
                             <input type="text" name="edit-mail" class="form-control input-edit" id="edit-mail" placeholder="" value="<?php if(isset($email)) { echo $email;} ?>">
 
                             <label class="label-edition" for="edit-mdp">Mot de passe:</label>
-                            <input type="password" name="edit-mdp" class="form-control input-edit" id="edit-mdp" placeholder="" value="<?php if(isset($mdp)) { echo $mdp;} ?>">
+                            <input disabled type="password" class="form-control input-edit" id="edit-mdp" placeholder="" value="<?php if(isset($mdp)) { echo $mdp;} ?>">
                            
                         </div>
                         <div class="form-group col-md-6">
                             <label class="label-edition" for="edit-login">Login:</label>
-                            <input type="text" name="edit-login" class="form-control input-edit" id="edit-login" placeholder="" value="<?php if(isset($login)) { echo $login;} ?>">
+                            <input disabled type="text" class="form-control input-edit" id="edit-login" placeholder="<?php if(isset($login)) { echo $login;} ?>" value="">
                             
                             <label class="label-edition" for="edit-service">Service:</label>
                             <input type="text" name="edit-service" class="form-control input-edit" id="edit-service" placeholder="" value="<?php if(isset($service)) { echo $service;} ?>">
@@ -163,7 +151,11 @@
                             <div class="raw erreur">
                                 <?php if (isset($erreur)){ echo "<p class='erreur'>" . $erreur . "</p>"; }; ?>
                             </div>
+                            
                             <button name="edit-profil" type="submit" class="btn btn-primary btn-lg btn-block btn-style-edit">Modifier mes informations</button>
+                            <div class="pas-membre">
+                                <p>Vous devez vous <span> <a class="str-link">reconnecter</a> </span> pour actualiser vos informations.</p>
+                            </div>
                             <!-- <button name="edit-profil" type="submit" class="btn btn-primary btn-lg btn-block btn-style-edit">annuler</button> -->
                             <!-- <label class="label-edition" for="edit-newmdp">Nouveau mot de passe:</label>
                             <input type="text" name="edit-newmdp" class="form-control input-edit" id="newedit-mdp" placeholder="" value="<?php //if(isset($date_trajet)) { echo $date_trajet;} ?>">

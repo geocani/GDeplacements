@@ -31,7 +31,7 @@
                                                 $insert_trajet = $bdd->prepare("INSERT INTO trajets(id_agent, date_trajet, heure_administrative, heure_domicile, nom_commune, heure_arrivee, heure_depart, fin_mission, km_aglomeration, km_hors, transport, motif, status_trajet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                                                 $insert_trajet->execute(array($_SESSION['id_agent'], $date_trajet, $heure_administrative, $heure_domicile, $nom_commune, $heure_arrivee, $heure_depart, $fin_mission, $km_aglomeration, $km_hors, $transport, $motif, "En cours"));
                                                 // Redirection
-                                                header("location: historique.php?id=".$_SESSION['id_agent']);
+                                                echo "<script type='text/javascript'>document.location.replace('historique.php?id=" .$_SESSION['id_agent']. "');</script>";
                                             }else{
                                                 $erreur_cert = "erreur certif";
                                             }

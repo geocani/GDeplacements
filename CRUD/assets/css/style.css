@@ -1,0 +1,11 @@
+.rowform{
+    max-width: 80%;
+}
+.titre{
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
+input{
+    margin-bottom: 10px;
+}

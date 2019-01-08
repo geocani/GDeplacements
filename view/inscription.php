@@ -14,7 +14,8 @@
                             $insert_login = $bdd->prepare("INSERT INTO agents(login, mdp) VALUES (?, ?)");
                             $insert_login->execute(array($_POST['new-login'], $_POST['new-pass']));
                             // Redirection
-                            header("location: index.php");
+                            // header("location: index.php");
+                            echo "<script type='text/javascript'>document.location.replace('index.php');</script>";
                         }else{
                             $erreur = "Ce login existe déja.";
                         }

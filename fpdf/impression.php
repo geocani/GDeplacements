@@ -27,8 +27,9 @@ try
 	$host = "localhost";
 	$bddname = "frais";
 	$log = "root";
-	$pass = "";
-	$bdd = new PDO("mysql: host=$host; dbname=$bddname; charset=utf8", "$log", "$pass");
+    $pass = "";
+    $bdd = new PDO("mysql: host=localhost; dbname=surikat1_frais; charset=utf8", "surikat1_un", "AD*wcJj6raYE");
+	// $bdd = new PDO("mysql: host=$host; dbname=$bddname; charset=utf8", "$log", "$pass");
 }
 catch(Exception $e)
 {
@@ -63,7 +64,7 @@ class PDF extends FPDF
 function Header()
 {
     // Logo
-    $this->Image('logoprovince.gif',10,6,30);
+    $this->Image('logo.png',10,6,30);
     // Police Arial gras 15
     $this->SetFont('Arial','B',15);
     // Décalage à droite

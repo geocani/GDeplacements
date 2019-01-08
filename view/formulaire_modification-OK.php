@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <input type="submit" class="btn btn-primary" name="modif-trajet" value="Modifier le formulaire">
-                <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-primary">Anuler</button></a> 
+               
             </form>
         </div>
     </section>

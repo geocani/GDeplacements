@@ -6,7 +6,8 @@ try
 	$host = "localhost";
 	$bddname = "frais";
 	$log = "root";
-	$pass = "";
+    $pass = "";
+    	// $bdd = new PDO("mysql: host=localhost; dbname=surikat1_frais; charset=utf8", "surikat1_un", "AD*wcJj6raYE");
 	$bdd = new PDO("mysql: host=$host; dbname=$bddname; charset=utf8", "$log", "$pass");
 }
 catch(Exception $e)

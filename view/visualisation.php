@@ -82,8 +82,8 @@
             </table>
             <a href="historique.php?id_trajet=<?php echo $_SESSION['id_agent']; ?>"><button type="button" class="btn btn-style">Retour</button></a>
             <a href="modification_trajet.php?id_trajet=<?php echo $id_trajet; ?>"><button type="button" class="btn btn-style">Modifier</button></a>  
-            <a class="hidden-phone" href="fpdf/impression.php?id_trajet=<?php echo $trajet['id_trajet']; ?>"><button type="button" class="btn btn-style">Imprimer</button></a>
-            <a href="fpdf/impression.php?id_trajet=<?php echo $trajet['id_trajet']; ?>" class="hidden-phone"> <button class="btn btn-outline-primary border" data-toggle="tooltip" data-placement="top" title="Impression du trajet"><i class="fa fa-print "></i></button></a>
+            
+            
         </div>
     </section>
 </section>
